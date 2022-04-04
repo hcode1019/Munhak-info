@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+img {
+  border: none;
+  vertical-align: bottom;
+}
+
+ul li {
+  list-style: none;
+}
+
+.questions-inner {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.questions-inner .title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.questions-inner ul li {
+  margin-bottom: 2rem;
+}
+.questions-inner ul li label h3 {
+  border: 1px solid #666;
+  padding: 0 1rem;
+  color: #333;
+  line-height: 3.2rem;
+  position: relative;
+}
+.questions-inner ul li label h3 .arrow-btn {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  right: 24px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  /*border: 1px solid #666;
+  border-radius: 50%;*/
+}
+.questions-inner ul li label h3 .arrow-btn img {
+  width: 80%;
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: rotate(90deg);
+}
+
+.questions-inner ul li article {
+  text-align: justify;
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+.questions-inner ul li article p {
+  padding: 1rem;
+  line-height: 1.8;
+  color: #333;
+  font-size: 14px;
+}
+
+.questions-inner ul li input[type="checkbox"]:checked ~ article {
+  height: 100px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.questions-inner ul li input[type="checkbox"]:checked ~ label h3 .arrow-btn img {
+  transform: rotate(-90deg);
+}

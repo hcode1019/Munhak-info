@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  padding:0
+}
+.main{
+  width:100%;
+  text-align: center;
+  padding:5rem 0;
+  color:#333;
+  background: url(../img/company_bg.jpg) no-repeat 0/cover;
+
+}
+.main .title_inner .main-title{
+  font-size:2rem;
+  margin-bottom:2rem;
+}
+.main .title_inner .sub-title{
+  font-size:1.2rem;
+}

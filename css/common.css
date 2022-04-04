@@ -1,0 +1,42 @@
+/* font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif; */
+
+html {
+  font-size: 16px;
+  color: #333;
+}
+body {
+  font-family: "Nanum Gothic", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+img {
+  border: none;
+  vertical-align: bottom;
+}
+
+ul li {
+  list-style: none;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+
+/* 글로벌네비 start */
+
+/* 글로벌네비 end */
+
+/*푸터 start*/
+
+/*푸터 end*/
