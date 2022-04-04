@@ -35,7 +35,7 @@ form {
 /* 책 리스트 영역 start */
 .main-item {
   width: 70%;
-  margin: 0 auto;
+  margin: 124px auto 120px;
   overflow: hidden;
   background-color: rgb(255, 255, 255);
 }

@@ -17,8 +17,11 @@
 	<!--구글아이콘-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
 
+	<!--공통 css -->
+	<link rel="stylesheet" href="./css/common.css">
 	<!-- 메인 css -->
 	<link rel="stylesheet" href="css/main.css" />
+
 
 	<!--제이쿼리 최신버전 링크-->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
@@ -33,8 +36,8 @@
 		<nav>
 			<div class="sub-menu">
 				<div class="sub-menu-contain">
-					<p class="login-inner"><a href="#">Login</a></p>
-					<p class="signup-inner"><a href="#">Join</a></p>
+					<p class="login-inner"><a href="signin.html">Login</a></p>
+					<p class="signup-inner"><a href="signup.html">Join</a></p>
 					<ul class="sns-list">
 						<li class="item"><a href="#"><img src="./img/icon/facebook_g.png" alt="facebook icon"></a></li>
 						<li class="item"><a href="#"><img src="./img/icon/instagram_g.png" alt="instagram icon"></a></li>
@@ -74,8 +77,8 @@
 													<h3 class="book-title">모래알만 한 진실이라도</h3>
 													<h4 class="desc">
 														올 겨울도 많이 추웠지만 가끔 따스했고 <br>
-													자주 우울했지만 어쩌다 행복하기도 했다
-												</h4>
+														자주 우울했지만 어쩌다 행복하기도 했다
+													</h4>
 												</div>
 											</a>
 											<a href="#" class="pic-inner">
@@ -198,39 +201,48 @@
 					</li>
 				</ul>
 				<ul class="sup-menu">
-					<li class="menu-item"><span id="searchBtn"class="material-icons-outlined">
-						search
+					<li class="menu-item"><span id="searchBtn" class="material-icons-outlined">
+							search
 						</span></li>
 					<li class="menu-item">
 						<a href="#">
 							<span class="material-icons-outlined">
 								shopping_cart
-								</span>
+							</span>
 						</a>
 					</li>
 					<li class="menu-item"><a href="#"><span class="material-icons-outlined">
-						person_outline
-						</span></a></li>
+								person_outline
+							</span></a></li>
 				</ul>
 			</div>
 		</nav>
 		<section class="search-item" id="search-item">
 			<form action="">
-
-				<input type="search" placeholder="[도서] 그 해 우리는 1">
+				<!-- 검색창 start -->
+				<input id="searchItem" type="search" placeholder="[도서] 그 해 우리는 1">
 				<input type="submit" id="search-submit-btn">
 				<label for="search-submit-btn">
 					<span class="material-icons-outlined">
 						search
-						</span>
+					</span>
 				</label>
+				<ul class="tags" id="Tags">
+					<li class="tag-item">에세이</li>
+					<li class="tag-item">한국소설</li>
+					<li class="tag-item">인문학</li>
+					<li class="tag-item">심리학</li>
+					<li class="tag-item">여행</li>
+				</ul>
 			</form>
 			<div class="close-btn" id="closeBtn">
 				<span class="material-icons-outlined">
 					close
-					</span>
+				</span>
 			</div>
 		</section>
+		<!-- 검색창 end  -->
+
 		<!-- 글로벌네비 end -->
 
 		<!-- 대슬라이드 start -->
