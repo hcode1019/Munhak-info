@@ -6,6 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Document</title>
+		<!--제이쿼리 최신버전 링크-->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+		<script defer src="./js/search.js"></script>
 	<!-- 구글폰트 -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +25,7 @@
 </head>
 
 <body>
+	<!-- 글로벌네비 start -->
 	<nav>
 		<div class="sub-menu">
 			<div class="sub-menu-contain">
@@ -36,7 +41,7 @@
 		</div>
 
 		<div class="main-menu">
-			<h1 class="logo"><a href="#"><img src="./img/symbol.png" alt="문학동네 로고"></a></h1>
+			<h1 class="logo"><a href="index.html"><img src="./img/symbol.png" alt="문학동네 로고"></a></h1>
 			<ul class="menu-contain">
 
 				<li class="menu-item books-intro"><a href="#">도서소개</a>
@@ -45,7 +50,7 @@
 							<ul class="depth-01">
 								<li class="menu-item category-books"><a href="#">분야별 도서</a>
 									<ul class="depth-02">
-										<li class="menu-item"><a href=""><span class="item-name">에세이</span></a></li>
+										<li class="menu-item"><a href="category.html"><span class="item-name">에세이</span></a></li>
 										<li class="menu-item"><a href=""><span class="item-name">국내소설</span></a></li>
 										<li class="menu-item"><a href=""><span class="item-name">해외소설</span></a></li>
 										<li class="menu-item"><a href=""><span class="item-name">인문학</span></a></li>
@@ -58,25 +63,6 @@
 											</a></li>
 										<li class="menu-item"><a href=""><span class="item-name">시리즈/전집</span></a></li>
 									</ul>
-									<div class="pic-contain">
-										<a href="#" class="pic-inner">
-											<img src="./img/goods_01.jpg" alt="모래알만 한 진실이라도">
-											<div class="text-inner">
-												<h3 class="book-title">모래알만 한 진실이라도</h3>
-												<h4 class="desc">
-													올 겨울도 많이 추웠지만 가끔 따스했고 <br>
-													자주 우울했지만 어쩌다 행복하기도 했다
-												</h4>
-											</div>
-										</a>
-										<a href="#" class="pic-inner">
-											<img src="./img/goods_02.jpg" alt="메구스타 칸쿤">
-											<div class="text-inner">
-												<h3 class="book-title">메구스타 칸쿤</h3>
-												<h4 class="desc">카리브해의 낭만을 간직한 중남미의 보석</h4>
-											</div>
-										</a>
-									</div>
 								</li>
 								<li class="menu-item"><a href="#">브랜드별 도서</a>
 									<ul class="depth-02">
@@ -84,22 +70,10 @@
 										<li class="menu-item"><a href=""><span class="item-name">고유서가</span></a></li>
 										<li class="menu-item"><a href=""><span class="item-name">글항아리</span></a></li>
 										<li class="menu-item"><a href=""><span class="item-name">나무의 마음</span></a></li>
-										<li class="menu-item"><a href=""><span class="item-name">난다</span></a></li>
 										<li class="menu-item"><a href=""><span class="item-name">달</span></a></li>
-										<li class="menu-item"><a href=""><span class="item-name">루페</span></a></li>
-										<li class="menu-item"><a href=""><span class="item-name">벨라루나</span></a></li>
-										<li class="menu-item"><a href=""><span class="item-name">싱긋</span></a></li>
-										<li class="menu-item"><a href=""><span class="item-name">아우름</span></a></li>
 										<li class="menu-item"><a href=""><span class="item-name">아템포</span></a></li>
 										<li class="menu-item"><a href=""><span class="item-name">아트북스</span></a></li>
-										<li class="menu-item"><a href=""><span class="item-name">애니북스</span></a></li>
 										<li class="menu-item"><a href=""><span class="item-name">앨리스</span></a></li>
-										<li class="menu-item"><a href=""><span class="item-name">에쎄</span></a></li>
-										<li class="menu-item"><a href=""><span class="item-name">엘릭시르</span></a></li>
-										<li class="menu-item"><a href=""><span class="item-name">오우아</span></a></li>
-										<li class="menu-item"><a href=""><span class="item-name">이봄</span></a></li>
-										<li class="menu-item"><a href=""><span class="item-name">이콘</span></a></li>
-										<li class="menu-item"><a href=""><span class="item-name">차이</span></a></li>
 										<li class="menu-item"><a href=""><span class="item-name">콜라주</span></a></li>
 										<li class="menu-item"><a href=""><span class="item-name">테이스트북스</span></a></li>
 										<li class="menu-item"><a href=""><span class="item-name">톨</span></a></li>
@@ -125,26 +99,55 @@
 								</li>
 							</ul>
 						</li>
+						<div class="pic-contain">
+							<a href="#" class="pic-inner">
+								<img src="./img/goods_01.jpg" alt="모래알만 한 진실이라도">
+								<div class="text-inner">
+									<h3 class="book-title">모래알만 한 진실이라도</h3>
+									<h4 class="desc">
+										올 겨울도 많이 추웠지만 가끔 따스했고 <br>
+										자주 우울했지만 어쩌다 행복하기도 했다
+									</h4>
+								</div>
+							</a>
+							<a href="#" class="pic-inner">
+								<img src="./img/goods_02.jpg" alt="메구스타 칸쿤">
+								<div class="text-inner">
+									<h3 class="book-title">메구스타 칸쿤</h3>
+									<h4 class="desc">카리브해의 낭만을 간직한 중남미의 보석</h4>
+								</div>
+							</a>
+							<a href="#" class="pic-inner">
+								<img src="./img/goods_04.jpg" alt="눈으로 만든 사람">
+								<div class="text-inner">
+									<h3 class="book-title">눈으로 만든 사람</h3>
+									<h4 class="desc">
+										아름답고 광포하고 쓸쓸한 소용돌이로 휘몰아치는 <br>
+										최은미 소설세계의 눈부신 분기점
+									</h4>
+								</div>
+							</a>
+						</div>
 					</ul>
 				</li>
 				<li class="menu-item company"><a href="#">회사소개</a>
 					<ul class="depth-contain">
 						<li class="depth-item">
 							<ul class="depth-01">
-								<li class="menu-item"><a href="#">브랜드</a></li>
-								<li class="menu-item"><a href="#">문학동네 출판그룹</a></li>
+								<li class="menu-item"><a href="brand.html">문학동네 출판그룹</a></li>
 								<li class="menu-item"><a href="#">문학동네가 걸어온 길</a></li>
 								<li class="menu-item"><a href="#">찾아오시는 길</a></li>
 								<li class="menu-item"><a href="#">제휴 문의</a></li>
 							</ul>
 						</li>
+						<div class="pic-contain">
+							<div class="pic-inner">
+								<img src="./img/goods_03.jpg" alt="photo">
+							</div>
+						</div>
 					</ul>
 
-					<div class="pic-contain">
-						<div class="pic-inner">
-							<img src="./img/goods_03.jpg" alt="photo">
-						</div>
-					</div>
+
 				</li>
 				<li class="menu-item book-club"><a href="#">북클럽</a>
 					<ul class="depth-contain">
@@ -158,6 +161,20 @@
 								<li class="menu-item"><a href="#">공지사항</a></li>
 							</ul>
 						</li>
+						<div class="pic-contain">
+							<a href="#" class="pic-inner">
+								<img src="./img/bookclub-menu-01.jpg" alt="문학동네">
+							</a>
+							<a href="#" class="pic-inner">
+								<img src="./img/bookclub-menu-02.jpg" alt="문학동네 북클럽 5기 모집">
+							</a>
+							<a href="#" class="pic-inner">
+								<img src="./img/bookclub-menu-03.jpg" alt="문학동네 맴버십 가입안내">
+							</a>
+							<a href="#" class="pic-inner">
+								<img src="./img/bookclub-menu-04.jpg" alt="북클럽샵">
+							</a>
+						</div>
 					</ul>
 				</li>
 				<li class="menu-item comunity"><a href="#">커뮤니티</a>
@@ -177,12 +194,12 @@
 					<ul class="depth-contain">
 						<li class="depth-item">
 							<ul class="depth-01">
+								<li class="menu-item"><a href="qna.html">자주묻는 질문</a></li>
 								<li class="menu-item"><a href="#">공지사항</a></li>
 								<li class="menu-item"><a href="#">문학동네 공모전</a></li>
 								<li class="menu-item"><a href="#">투고문의</a></li>
 								<li class="menu-item"><a href="#">2차 저작권 이용 안내</a></li>
 								<li class="menu-item"><a href="#">자료실</a></li>
-								<li class="menu-item"><a href="#">FAQ</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -205,10 +222,10 @@
 			</ul>
 		</div>
 	</nav>
-	<section class="search-item" id="search-item">
+	<section class="search-item" id="searchBar">
 		<form action="">
 			<!-- 검색창 start -->
-			<input id="searchItem" type="search" placeholder="[도서] 그 해 우리는 1">
+			<input id="searchItem" type="search" placeholder="검색어를 입력하여 주세요">
 			<input type="submit" id="search-submit-btn">
 			<label for="search-submit-btn">
 				<span class="material-icons-outlined">
@@ -229,6 +246,10 @@
 			</span>
 		</div>
 	</section>
+	<!-- 검색창 end  -->
+
+	<!-- 글로벌네비 end -->
+
 	<section class="main">
 		<h2 class="head">로그인</h2>
 		<article class="signin_inner">
