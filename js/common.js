@@ -36,20 +36,20 @@ $(function () {
 
 
 
-  //고객지원 메뉴 배경이미지 변경
-  var menuListEl = $(".menu-item.about.ano-type.left-el .depth-contain .depth-item");
-  var menuBgEl =  $(".menu-item.about.ano-type.left-el .depth-contain .bg-contain");
+  ////고객지원 메뉴 배경이미지 변경
+  //var menuListEl = $(".menu-item.about.ano-type.left-el .depth-contain .depth-item");
+  //var menuBgEl =  $(".menu-item.about.ano-type.left-el .depth-contain .bg-contain");
 
-  $(menuListEl).hover(function(){
-    $(menuBgEl).removeClass("active");
+  //$(menuListEl).hover(function(){
+  //  $(menuBgEl).removeClass("active");
 
-    var tarEl = "#" + $(this).attr("rel");
-    $(tarEl).addClass("active");
-  });
-  //고객지원 메뉴 초기값 설정
-  $(".menu-item.about.ano-type.left-el > a").mouseover(function(){
-    $(".menu-item.about.ano-type.left-el .depth-contain .bg-contain:").removeClass("active");
-    $(".menu-item.about.ano-type.left-el .depth-contain .bg-contain#menu-supprot-bg").addClass("active");
-  })
+  //  var tarEl = "#" + $(this).attr("rel");
+  //  $(tarEl).addClass("active");
+  //});
+  ////고객지원 메뉴 초기값 설정
+  //$(".menu-item.about.ano-type.left-el > a").mouseover(function(){
+  //  $(".menu-item.about.ano-type.left-el .depth-contain .bg-contain:").removeClass("active");
+  //  $(".menu-item.about.ano-type.left-el .depth-contain .bg-contain#menu-supprot-bg").addClass("active");
+  //})
 
 })
