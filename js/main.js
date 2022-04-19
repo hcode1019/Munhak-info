@@ -3,8 +3,6 @@ $(function () {
     $(this).children(".bg-contain,.para-inner,.circle-el").addClass("active");
   });
 
-
-
   //구글맵
   $("#googleMapBtn").click(function () {
     $(".google-map_sec").show(); //버튼이 클릭되면 구글맵 배너 블럭
@@ -26,8 +24,6 @@ $(function () {
       $(targetEl).addClass("selected");//해당 rel값을 가진 아이디 요소 보여짐
     })
 
-
-
     //움직이는 퀵메뉴
     var defalutTop = parseInt($(".quick_btn").css("top")) //기본위치
 
@@ -36,5 +32,61 @@ $(function () {
       $(".quick_btn").stop().animate({top:defalutTop + st},800) //기본위치에 스크롤 발생한 거리만큼 1초동안 이동
     })
 
+
+    //도서 슬라이드 배너
+    var i = 1; //초기값 i 설정
+    $(".most-book_banner .wrap:first-child").addClass("active");
+    $(".most-book_banner .goods img:first-child").addClass("active");
+    $(".most-book_banner .goods img").not(":first-child").addClass("next"); //초기값으로 보여질 이미지를 제외하고 클래스를 추가하여 위치를 이동
+    $(".most-book_banner .next-btn").click(function(){
+      if(i < 5){ //버튼 클릭시 이미지의 최대,최소갯수를 초과하지 않게 조건문 제시
+        i++; // 다음 버튼 클릭시 i가 1개씩 증가,i의 해당하는 인덱스를 화면에 보여지게함
+        changer()
+        $(".most-book_banner .goods img:nth-child("+ (i - 1) +")").removeClass("active").addClass("prev");
+        $(".most-book_banner .goods img:nth-child("+ i +")").removeClass("next").addClass("active");
+    }
+  });
+
+    $(".most-book_banner .prev-btn").click(function(){
+      if(i > 1){
+      i--;
+        changer()
+        $(".most-book_banner .goods img:nth-child("+ (i + 1) +")").removeClass("active").addClass("next");
+        $(".most-book_banner .goods img:nth-child("+ i +")").removeClass("prev").addClass("active");
+      }
+    });
+
+    function changer(){
+      $(".most-book_banner .pager .state li").removeClass("active");
+      $(".most-book_banner .pager .state li:nth-child("+ i +")").addClass("active");
+      $(".most-book_banner .wrap").removeClass("active");
+      $(".most-book_banner .wrap:nth-child(" + i + ")").addClass("active");
+    };
+
+      //도서 슬라이드 메뉴
+        var mySlider = $("#list-contain .slider").bxSlider({
+          mode: 'horizontal',// 가로 방향 수평 슬라이드
+          speed: 500,        // 이동 속도를 설정
+          pager: false,      // 현재 위치 페이징 표시 여부 설정
+          moveSlides: 1,     // 슬라이드 이동시 개수
+          slideWidth: 320,   // 슬라이드 너비
+          minSlides: 4,      // 최소 노출 개수
+          maxSlides: 4,      // 최대 노출 개수
+          slideMargin: 30,    // 슬라이드간의 간격
+          auto: true,        // 자동 실행 여부
+          autoHover: true,   // 마우스 호버시 정지 여부
+          controls: false    // 이전 다음 버튼 노출 여부
+        })
+      $("#bx-prev").click(function(){
+        console.log("prev");
+        mySlider.goToPrevSlide();
+        return false;
+      });
+      $("#bx-next").click(function(){
+        console.log("next");
+        mySlider.goToNextSlide();
+        return false;
+      });
 });
+
 

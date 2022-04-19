@@ -1,5 +1,6 @@
 /* font-family: 'Nanum Gothic', sans-serif;
-font-family: 'Nanum Myeongjo', serif; */
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Black Han Sans', sans-serif; */
 
 .btn {
   border-radius: 16px;
@@ -108,122 +109,122 @@ font-family: 'Nanum Myeongjo', serif; */
 .company_banner article .meta-ico_inner .icon:hover {
   box-shadow: 5px 5px 8px rgba(200, 200, 200, 0.6);
 }*/
-  .brands-banner{
-    width:100%;
-    height:56.25vw;
-    position:relative;
-    overflow:hidden;
-  }
-  .brands-banner .bg-contain{
-    position:absolute;
-    right:0;
-    top:0;
-    bottom:0;
-    margin:auto 0;
-    width:80%;
-    height:70%;
-    background: url(../img/brand.jpg) no-repeat;
-    background-size: cover;
-    background-position: top left;
-    transition: 1.5s ease-out;
-    transform: translateX(30%);
-    opacity:0;
-  }
-  .brands-banner .bg-contain.active{
-    transform: translateX(0);
-    opacity:1;
-  }
-  .brands-banner .para-inner{
-    position:absolute;
-    left:15%;
-    top:25%;
-    transition: 1s .5s ease-out;
-    transform: translateY(20%);
-    opacity:0;
-  }
-  .brands-banner .para-inner.active{
-    transform: translateY(0);
-    opacity:1;
-  }
-  .brands-banner .para-inner .banner-title{
-    font-family: 'Nanum Myeongjo', serif;
-    font-size:6.25rem;
-    color:#000;
-    margin-bottom:8%;
-  }
-  .brands-banner .para-inner .desc{
-    font-size:1.2rem;
-    line-height:2;
-    margin-bottom:10%;
-    color:#666;
-  }
-  .brands-banner .para-inner .company-page_btn{
-    display:block;
-    width:150px;
-    height:19px;
-    background: url(../img/arrow.png) no-repeat;
-    background-position: right 50px top;
-    background-size: cover;
-    animation: growBtn 4s linear infinite;
-    /*transition: .3s ease-out;*/
-  }
-  /*.brands-banner .para-inner .company-page_btn:hover{
+.brands-banner {
+  width: 100%;
+  height: 56.25vw;
+  position: relative;
+  overflow: hidden;
+}
+.brands-banner .bg-contain {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 80%;
+  height: 70%;
+  background: url(../img/brand.jpg) no-repeat;
+  background-size: cover;
+  background-position: top left;
+  transition: 1.5s ease-out;
+  transform: translateX(30%);
+  opacity: 0;
+}
+.brands-banner .bg-contain.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.brands-banner .para-inner {
+  position: absolute;
+  left: 15%;
+  top: 25%;
+  transition: 1s 0.5s ease-out;
+  transform: translateY(20%);
+  opacity: 0;
+}
+.brands-banner .para-inner.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.brands-banner .para-inner .banner-title {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 6.25rem;
+  color: #000;
+  margin-bottom: 8%;
+}
+.brands-banner .para-inner .desc {
+  font-size: 1.2rem;
+  line-height: 2;
+  margin-bottom: 10%;
+  color: #666;
+}
+.brands-banner .para-inner .company-page_btn {
+  display: block;
+  width: 150px;
+  height: 19px;
+  background: url(../img/arrow.png) no-repeat;
+  background-position: right 50px top;
+  background-size: cover;
+  animation: growBtn 4s linear infinite;
+  /*transition: .3s ease-out;*/
+}
+/*.brands-banner .para-inner .company-page_btn:hover{
     animation:none;
     width:150px;
   }*/
-  @keyframes growBtn {
-    0%{
-      background-position: right 50px top;
-    }
-    10%{
-      background-position: right 20px top;
-    }
-    20%{
-      background-position: right 40px top;
-    }
-    30%{
-      background-position: right top;
-    }
-    70%{
-      background-position: right top;
-    }
-    85%{
-      background-position: right 50px top;
-    }
-    100%{
-      background-position: right 50px top;
-    }
+@keyframes growBtn {
+  0% {
+    background-position: right 50px top;
   }
-  .brands-banner .circle-el{
-    display:block;
-    position:absolute;
-    left:15%;
-    bottom:10%;
-    width:180px;
-    height:180px;
-    background: url(../img/brand-circle-02.png) no-repeat;
-    background-position: left top;
-    background-size: cover;
-    animation: rotateCircle 20s linear infinite;
-    transition: opacity 1s 1s ease-out;
-    opacity:0;
+  10% {
+    background-position: right 20px top;
   }
-  .brands-banner .circle-el.active{
-    opacity:1;
+  20% {
+    background-position: right 40px top;
   }
-  @keyframes rotateCircle {
-    from{
-      transform: rotate(0deg);
-    }
-    to{
-      transform: rotate(360deg);
-    }
+  30% {
+    background-position: right top;
   }
+  70% {
+    background-position: right top;
+  }
+  85% {
+    background-position: right 50px top;
+  }
+  100% {
+    background-position: right 50px top;
+  }
+}
+.brands-banner .circle-el {
+  display: block;
+  position: absolute;
+  left: 15%;
+  bottom: 10%;
+  width: 180px;
+  height: 180px;
+  background: url(../img/brand-circle-02.png) no-repeat;
+  background-position: left top;
+  background-size: cover;
+  animation: rotateCircle 20s linear infinite;
+  transition: opacity 1s 1s ease-out;
+  opacity: 0;
+}
+.brands-banner .circle-el.active {
+  opacity: 1;
+}
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* 회사소개 배너 end */
 
 /*추천도서배너 start*/
-.recom-book_banner {
+/* .recom-book_banner {
   background-color: #f6f3ee;
   color: #333;
   font-family: "Nanum Myeongjo", serif;
@@ -242,6 +243,69 @@ font-family: 'Nanum Myeongjo', serif; */
   font-weight: 400;
   line-height: 1.8;
   color: #666;
+} */
+.recom-book_banner{
+  width:100%;
+  position:relative;
+}
+.recom-book_banner #slideInner {
+  margin: 40px 0;
+  overflow:hidden;
+  text-align: center;
+  position: relative;
+}
+.recom-book_banner #slideInner #list-contain {
+  width: 100%;
+  padding: 3% 0 0;
+  height:700px;
+  margin: 0 auto;
+  position: relative;
+}
+.recom-book_banner #slideInner #list-contain ul {
+}
+.recom-book_banner #slideInner #list-contain ul li {
+
+}
+.recom-book_banner #slideInner #list-contain ul li img {
+  width: 100%;
+  margin-bottom:20px;
+}
+.recom-book_banner #slideInner #list-contain ul li .title {
+  font-size: 1rem;
+  display:block;
+  margin-bottom:12px;
+}
+.recom-book_banner #slideInner #list-contain ul li .writer {
+  font-size: 1rem;
+  display:block;
+}
+.recom-book_banner #slideInner #list-contain ul li a:hover .writer {
+}
+.recom-book_banner #slideInner #bx-prev,
+.recom-book_banner #slideInner #bx-next {
+  display:block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  z-index:5;
+}
+.recom-book_banner #slideInner #bx-prev {
+  left: 7%;
+}
+.recom-book_banner #slideInner #bx-next {
+  right: 7%;
+}
+.recom-book_banner #slideInner #bx-prev img,
+.recom-book_banner #slideInner #bx-next img {
+  width: 100%;
+  border: none;
+  margin-bottom:10px;
+}
+.recom-book_banner #slideInner #bx-prev img {
+  transform: rotate(180deg);
 }
 /*추천도서배너 end*/
 
@@ -302,7 +366,7 @@ font-family: 'Nanum Myeongjo', serif; */
 
 /*도서 슬라이드 start*/
 
-.book-slide_banner {
+/* .book-slide_banner {
   width: 100%;
   padding: 0 10%;
   margin: 0 auto 12.5rem;
@@ -312,9 +376,6 @@ font-family: 'Nanum Myeongjo', serif; */
   font-size: 2.2rem;
   margin-bottom: 5rem;
 }
-/*.book-slide_banner .visual{
-  display:flex;
-}*/
 .book-slide_banner .content_inner {
   width: 16%;
   margin-right: 5%;
@@ -357,21 +418,165 @@ font-family: 'Nanum Myeongjo', serif; */
   color: #666;
   font-size: 0.8rem;
   margin-left: 2px;
+} */
+
+.most-book_banner {
+  width: 100%;
+  height: 50vw;
+  overflow: hidden;
+  margin-bottom:5rem;
+  /*border: 1px solid black;*/
+}
+.most-book_banner .inner {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  height:100%;
+}
+.most-book_banner .inner .pages {
+  width: 6%;
+  display: flex;
+  margin-bottom: 5%;
+  padding-top: 7%;
+}
+.most-book_banner .inner .pages li {
+  width: 12%;
+  padding-bottom: 12%;
+  margin-right: 10%;
+  border-radius: 50%;
+  background-color: rgb(211, 211, 211);
+}
+.most-book_banner .inner .pages li.active {
+  background-color: #666;
+}
+.most-book_banner .inner .pages li:last-child {
+  margin-right: 0;
 }
 
-/*도서 슬라이드 end*/
+.most-book_banner .inner .text-contain {
+  width: 40%;
+  float: left;
+  position: relative;
+  height:50%;
+  margin-top:15%;
+
+}
+.most-book_banner .inner .text-contain .wrap{
+  display: none;
+}
+.most-book_banner .inner .text-contain .wrap.active{
+  display: block;
+}
+.most-book_banner .inner .text-contain .text-inner {
+  width: 100%;
+  position: absolute;
+}
+
+.most-book_banner .inner .text-contain .text-inner .main-title {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: #333;
+  margin-bottom:1rem;
+}
+.most-book_banner .inner .text-contain .text-inner .desc {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  height: 4rem;
+  color: #666;
+  margin-bottom:5rem;
+}
+.most-book_banner .inner .text-contain .text-inner .more-btn {
+  background-color: #333;
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  line-height: 2.4rem;
+  border: 1px solid #333;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+  transition: .3s;
+}
+.most-book_banner .inner .text-contain .text-inner .more-btn:hover{
+  background-color: #fff;
+  color: #333;
+}
+.most-book_banner .inner .controls{
+  position: absolute;
+  left:0;
+  bottom:10%;
+  font-weight:bold;
+  display:flex;
+  vertical-align: middle;
+  color:#333;
+  font-weight: bold;
+}
+.most-book_banner .inner .controls .prev-btn,
+.most-book_banner .inner .controls .next-btn{
+  display:inline-block;
+  margin:0 1rem;
+  cursor: pointer;
+}
+
+.most-book_banner .inner .controls .pager{
+  overflow:hidden;
+  margin-left:2rem;
+}
+.most-book_banner .inner .controls .pager span{
+  font-size:1rem;
+  height:1rem;
+}
+.most-book_banner .inner .controls .pager .state{
+  display:inline-block;
+  margin:0 1rem;
+}
+.most-book_banner .inner .controls .pager .state li{
+  width:20px;
+  height:7px;
+  background-color: #cecece;
+  float:left;
+}
+.most-book_banner .inner .controls .pager .state li.active{
+  background-color: #272727;
+}
+.most-book_banner .inner .goods {
+  width:30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.most-book_banner .inner .goods img {
+  display: block;
+  width: 100%;
+  position: absolute;
+  opacity:0;
+  transform-origin: center 200%;
+  transition: .7s ease-in-out;
+}
+.most-book_banner .inner .goods img.active {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.most-book_banner .inner .goods img.next{
+  transform: rotate(20deg);
+}
+.most-book_banner .inner .goods img.prev {
+  transform: rotate(-20deg);
+}
+/*도서 슬라이드 end
 
 /* 북캐스트 배너 start */
 
 .book-cast_banner {
   width: 100%;
-  margin: 0 auto 7.5rem;
+  margin: 0 auto 15rem;
   font-family: "Nanum Myeongjo", serif;
-
 }
 .book-cast_banner .photo-contain > img.item {
   width: 100%;
-  margin-top:35%;
+  margin-top: 35%;
   vertical-align: bottom;
 }
 
@@ -410,7 +615,7 @@ font-family: 'Nanum Myeongjo', serif; */
   width: 70%;
   margin-left: 20%;
 }
-.book-cast_banner:hover .photo-contain > img.item{
+.book-cast_banner:hover .photo-contain > img.item {
 }
 .book-cast_banner .text-inner {
   width: 50%;
@@ -419,12 +624,6 @@ font-family: 'Nanum Myeongjo', serif; */
   transform: translateY(-50%);
   right: 0;
   text-align: center;
-  opacity: 0;
-  transition: opacity 0.4s 0s ease-out;
-}
-.book-cast_banner:hover .text-inner {
-  opacity: 1;
-  transition: opacity 1s 5.8s ease-out;
 }
 .book-cast_banner .text-inner .sub-title {
   /* font-size: 1rem; */
@@ -432,6 +631,12 @@ font-family: 'Nanum Myeongjo', serif; */
   color: #000f3e;
   font-weight: 400;
   margin: 0 0 0.625rem;
+  opacity:0;
+  transition: opacity 0.4s 0s ease-out;
+}
+.book-cast_banner:hover .text-inner .sub-title{
+  opacity: 1;
+  transition: opacity 1s 4s ease-out;
 }
 .book-cast_banner .text-inner .main-title {
   /* font-size: 2rem; */
@@ -439,6 +644,12 @@ font-family: 'Nanum Myeongjo', serif; */
   color: #333;
   font-weight: bold;
   margin: 0 0 1.5rem;
+  opacity:0;
+  transition: opacity 0.4s 0s ease-out;
+}
+.book-cast_banner:hover .text-inner .main-title{
+  opacity: 1;
+  transition: opacity 1s 4.4s ease-out;
 }
 .book-cast_banner .text-inner .disc {
   /* font-size: 1.125rem; */
@@ -446,13 +657,25 @@ font-family: 'Nanum Myeongjo', serif; */
   color: #333;
   margin-bottom: 2.2rem;
   line-height: 1.8;
+  opacity:0;
+  transition: opacity 0.4s 0s ease-out;
+}
+.book-cast_banner:hover .text-inner .disc{
+  opacity: 1;
+  transition: opacity 1s 4.8s ease-out;
 }
 .book-cast_banner .text-inner .btn {
-  width: 9.375rem;
-  border-radius: 5px;
+  width: 12rem;
   font-size: 1rem;
+  border-radius: 0;
   color: #fff;
   background-color: #333;
+  opacity:0;
+  transition: opacity 0.4s 0s ease-out;
+}
+.book-cast_banner:hover .text-inner .btn{
+  opacity: 1;
+  transition: opacity 1s 5.2s ease-out;
 }
 .book-cast_banner .text-inner .btn:hover {
   color: #333;
@@ -464,82 +687,81 @@ font-family: 'Nanum Myeongjo', serif; */
   width: 1.5%;
   height: auto;
   left: 33%;
-  top:65%;
+  top: 65%;
   transform: translate(-50%);
-  opacity:0;
+  opacity: 0;
 }
 .book-cast_banner .containner > .note {
   position: absolute;
   display: block;
   height: 6%;
   left: 33%;
-  top:65%;
+  top: 65%;
   /*top:40%;*/
   /*left:70%;*/
   transform: translate(-50%);
-  opacity:0;
-
+  opacity: 0;
 }
-.book-cast_banner:hover .containner > img{
-  animation-name:flutterItem;
+.book-cast_banner:hover .containner > img {
+  animation-name: flutterItem;
   animation-duration: 3s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 @keyframes flutterItem {
-  0%{
-    transform: scale(.5);
+  0% {
+    transform: scale(0.5);
   }
-  30%{
-    top:45%;
-    opacity:1;
+  30% {
+    top: 45%;
+    opacity: 1;
   }
-  60%{
-    opacity:1;
-    top:42%;
+  60% {
+    opacity: 1;
+    top: 42%;
   }
-  100%{
-    top:38%;
-    left:70%;
-    opacity:0;
-    display:none;
+  100% {
+    top: 38%;
+    left: 70%;
+    opacity: 0;
+    display: none;
     transform: scale(1);
   }
 }
-.book-cast_banner:hover .containner .item-01{
-  animation-delay: .3s;
+.book-cast_banner:hover .containner .item-01 {
+  animation-delay: 0.3s;
 }
-.book-cast_banner:hover .containner .item-02{
-  animation-delay: .5s;
+.book-cast_banner:hover .containner .item-02 {
+  animation-delay: 0.5s;
 }
-.book-cast_banner:hover .containner .item-03{
+.book-cast_banner:hover .containner .item-03 {
   animation-delay: 1.2s;
 }
-.book-cast_banner:hover .containner .item-04{
+.book-cast_banner:hover .containner .item-04 {
   animation-delay: 2.1s;
 }
-.book-cast_banner:hover .containner .item-05{
+.book-cast_banner:hover .containner .item-05 {
   animation-delay: 3s;
 }
-.book-cast_banner:hover .containner .item-06{
+.book-cast_banner:hover .containner .item-06 {
   animation-delay: 1.5s;
 }
-.book-cast_banner:hover .containner .item-07{
+.book-cast_banner:hover .containner .item-07 {
   animation-delay: 1s;
 }
-.book-cast_banner:hover .containner .item-08{
+.book-cast_banner:hover .containner .item-08 {
   animation-delay: 1.8s;
 }
-.book-cast_banner:hover .containner .item-09{
+.book-cast_banner:hover .containner .item-09 {
   animation-delay: 2.3s;
 }
-.book-cast_banner:hover .containner .item-10{
+.book-cast_banner:hover .containner .item-10 {
   animation-delay: 2.5s;
 }
-.book-cast_banner:hover .containner .item-11{
-  animation-delay: .7s;
+.book-cast_banner:hover .containner .item-11 {
+  animation-delay: 0.7s;
 }
-.book-cast_banner:hover .containner .item-12{
+.book-cast_banner:hover .containner .item-12 {
   animation-delay: 2.8s;
 }
 
@@ -910,146 +1132,157 @@ section.event_banner article:last-child {
 
 /*공지사항배너 start*/
 
-  .notice-banner{
-    width:80%;
-    margin:0 auto 200px;
-    overflow:hidden;
-  }
-  .notice-banner .banner-contain{
-    width:40%;
-    float:left;
-  }
-  .notice-banner .photo-contain{
-    width:50%;
-    float:left;
-    height:382px;
-    margin-right:10%;
-    background: url(../img/recycle-bg-01.jpg) no-repeat;
-    background-position: left top 70%;;
-    background-size: cover;
-    position:relative;
-    overflow:hidden;
-  }
-  .notice-banner .photo-contain .bg-filter{
-    position: absolute;
-    left:0;
-    top:0;
-    bottom:0;
-    right:0;
-    background-color: rgba(0,0,0,0);
-    transition: .3s;
-  }
-  .notice-banner .photo-contain:hover .bg-filter{
-    background-color: rgba(0,0,0,.4);
-  }
-  .notice-banner .photo-contain .info-contain{
-    position:absolute;
-    left:5%;
-    right:0;
-    bottom:-1rem;
-    color:#fff;
-    transition: .3s;
-  }
-  .notice-banner .photo-contain:hover .info-contain{
-    bottom:5%;
-  }
-  .notice-banner .photo-contain .info-contain .sub-title{
-    font-size:1rem;
-    margin-bottom:.5rem;
-  }
-  .notice-banner .photo-contain .info-contain .main-title{
-    font-size:2rem;
-    margin-bottom:1rem;
-  }
-  .notice-banner .photo-contain .info-contain .paragraph{
-    font-size:1rem;
-    opacity:0;
-    transition: .3s;
-  }
-  .notice-banner .photo-contain:hover .info-contain .paragraph{
-    opacity:1;
-  }
-  .notice-banner .photo-contain .info-contain .paragraph:hover{
-    text-decoration: underline;
-  }
-  .notice-banner .banner-contain ul {
-    width:100%;
-    overflow:hidden;
-  }
-  .notice-banner .banner-contain ul .list-el{
-    width:33.333%;
-    border:1px solid rgb(220, 220, 220);
-    border-right:none;
-    float:left;
-    text-align: center;
-    line-height:3;
-    font-weight:bold;
-    background-color: #fff;
-    color:#1d2d7b;
-    cursor:pointer;
-  }
-  .notice-banner .banner-contain ul .list-el:last-child{
-    border-right:1px solid rgb(220, 220, 220);
-  }
-  .notice-banner .banner-contain ul .list-el.active{
-    background-color:#1d2d7b;
-    border-color:#1d2d7b;
-    color:#fff;
-  }
-  .notice-banner .banner-contain .banner-title{
-    font-size:1.5rem;
-    font-weight:900;
-    line-height:70px;
-    border-bottom:1px solid #666;
-    margin-bottom:1rem;
-    position:relative;
-  }
-  .notice-banner .banner-contain .banner-title a{
-    position:absolute;
-    right:0;
-    text-align: center;
-  }
-  .notice-banner .banner-contain .banner-title a .icon{
-    font-size:1.8rem;
-    line-height:70px;
-    color:#999;
-  }
-  .notice-banner .banner-contain > div.item{
-    display:none;
-  }
-  .notice-banner .banner-contain > div.item.selected{
-    display:block;
-  }
-  .notice-banner .banner-contain ul .list-item{
-    width:100%;
-  }
-  .notice-banner .banner-contain ul .list-item > a{
-    display:block;
-    overflow:hidden;
-    border-bottom:1px solid rgb(218, 218, 218);
-  }
-  .notice-banner .banner-contain ul .list-item > a .desc{
-    width:80%;
-    float:left;
-    overflow:hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    padding-right:2rem;
-    line-height:3;
-    font-size:1rem;
-    height:3rem;
-    color:#333;
-  }
-  .notice-banner .banner-contain ul .list-item > a:hover .desc{
-    font-weight:bold;
-  }
-  .notice-banner .banner-contain ul .list-item > a .date{
-    width:20%;
-    float:left;
-    height:3rem;
-    line-height:3;
-    color:#999;
-  }
+.notice-banner {
+  width: 100%;
+  margin: 0 auto 200px;
+  overflow: hidden;
+}
+.notice-banner .photo-contain {
+  width: 50%;
+  float: left;
+  height: 427px;
+  background: url(../img/recycle-bg-10.jpg) no-repeat;
+  background-position: left top;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.notice-banner .banner-contain {
+  width: 35%;
+  margin-right:10%;
+  float: right;
+}
+.notice-banner .photo-contain .bg-filter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.notice-banner .photo-contain:hover .bg-filter {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.notice-banner .photo-contain .info-contain {
+  position: absolute;
+  left: 5%;
+  right: 0;
+  bottom: -1rem;
+  color: #fff;
+  transition: 0.3s;
+}
+.notice-banner .photo-contain:hover .info-contain {
+  bottom: 5%;
+}
+.notice-banner .photo-contain .info-contain .sub-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.notice-banner .photo-contain .info-contain .main-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.notice-banner .photo-contain .info-contain .paragraph {
+  font-size: 1rem;
+  opacity: 0;
+  transition: 0.3s;
+}
+.notice-banner .photo-contain:hover .info-contain .paragraph {
+  opacity: 1;
+}
+.notice-banner .photo-contain .info-contain .paragraph:hover {
+  text-decoration: underline;
+}
+.notice-banner .banner-contain ul {
+  width: 100%;
+  overflow: hidden;
+}
+.notice-banner .banner-contain ul .list-el {
+  width: 33.333%;
+  border: 1px solid rgb(220, 220, 220);
+  border-right: none;
+  float: left;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 3;
+  font-weight: bold;
+  background-color: #fff;
+  color: #1d2d7b;
+  cursor: pointer;
+}
+.notice-banner .banner-contain ul .list-el:last-child {
+  border-right: 1px solid rgb(220, 220, 220);
+}
+.notice-banner .banner-contain ul .list-el.active {
+  background-color: #1d2d7b;
+  border-color: #1d2d7b;
+  color: #fff;
+}
+.notice-banner .banner-contain .banner-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 70px;
+  position: relative;
+}
+.notice-banner .banner-contain .banner-title a {
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+.notice-banner .banner-contain .banner-title a .icon {
+  font-size: 1.8rem;
+  line-height: 70px;
+  color: rgb(185, 185, 185);
+  transition: .3s;
+}
+.notice-banner .banner-contain .banner-title a .icon:hover{
+  color:#1d2d7b;
+}
+.notice-banner .banner-contain > div.item {
+  display: none;
+}
+.notice-banner .banner-contain > div.item.selected {
+  display: block;
+}
+.notice-banner .banner-contain ul {
+  overflow:hidden;
+}
+.notice-banner .banner-contain ul .list-item {
+  width:50%;
+  float:left;
+}
+.notice-banner .banner-contain ul .list-item > a {
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgb(210, 210, 210);
+  padding:1rem;
+}
+.notice-banner .banner-contain ul .list-item:nth-child(2n - 1) > a{
+  border-right:none;
+}
+.notice-banner .banner-contain ul .list-item:nth-child(1) > a,
+.notice-banner .banner-contain ul .list-item:nth-child(2) > a{
+  border-bottom:none;
+}
+
+.notice-banner .banner-contain ul .list-item > a .desc {
+  line-height: 1.4;
+  font-size: 1rem;
+  height: 3rem;
+  color: #333;
+  margin-bottom:1.5rem;
+  font-weight: bold;
+}
+.notice-banner .banner-contain ul .list-item > a:hover .desc {
+  text-decoration: underline;
+}
+.notice-banner .banner-contain ul .list-item > a .date {
+  height: 3rem;
+  font-size: 0.875rem;
+  line-height: 3rem;
+  color: #999;
+}
 
 /*공지사항배너 end*/
 
@@ -1090,9 +1323,14 @@ section.event_banner article:last-child {
   font-weight: 900;
 }
 .cafe-comma_banner .center-text_inner .main-title {
-  font-size: 4.75rem;
+  font-size: 4rem;
   font-weight: 900;
+  line-height:1;
   margin-top: 1.4rem;
+  vertical-align: bottom;
+}
+.cafe-comma_banner .center-text_inner .main-title span{
+  font-size:6rem;
 }
 .cafe-comma_banner .disc {
   position: absolute;
@@ -1231,19 +1469,20 @@ section.event_banner article:last-child {
   z-index: 9;
 }
 .quick_btn .quick_inner .item {
-  width: 100px;
+  width: 80px;
   height: 60px;
-  /*background-color: rgba(255, 255, 255, 0.5);*/
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
+}
+.quick_btn .quick_inner .item:last-child {
 }
 .quick_btn .quick_inner .item .inner {
   display: block;
-  color: rgb(245, 245, 245);
   cursor: pointer;
   line-height: 60px;
-  font-size:2rem;
-  font-weight:400;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color:#fff;
 }
 
 /*퀵메뉴 end*/
@@ -1295,21 +1534,18 @@ section.event_banner article:last-child {
   text-align: center;
   border: 1px solid #fff;
   background-color: #fff;
-  color:#666;
+  color: #666;
   font-size: 1.25rem;
-  font-weight:bold;
+  font-weight: bold;
   line-height: 2;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
-.google-map_sec .close-btn:hover{
-  color:#fff;
+.google-map_sec .close-btn:hover {
+  color: #fff;
   background-color: transparent;
 }
 /* 구글맵 종료 */
-
-
-
 
 /*.box {
   position: relative;
@@ -1368,4 +1604,3 @@ i:nth-child(5) {
     transform: rotate(160deg) translate(50%, 25px);
   }
 }*/
-

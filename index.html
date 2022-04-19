@@ -10,8 +10,10 @@
 	<!-- 구글폰트 -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
 		rel="stylesheet">
 
 	<!--구글아이콘-->
@@ -21,17 +23,20 @@
 	<link rel="stylesheet" href="./css/common.css">
 	<!-- 메인 css -->
 	<link rel="stylesheet" href="css/main.css" />
-
-
 	<!--제이쿼리 3.6.0 링크-->
-	<script defer src="./js/jquery-3.6.0.min.js"></script>
+	<!--<script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>-->
+	<!--제이쿼리 최신버전-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<!--bx slider-->
+	<script src="./plugins/jquery.bxslider.min.js"></script>
+
 
 	<!--Js file -->
-
 	<!--메뉴에 해당하는 js-->
-	<script defer src="./js/common.js"></script>
+	<script src="./js/common.js"></script>
+
 	<!--index페이지 js-->
-	<script defer src="./js/main.js"></script>
+	<script src="./js/main.js"></script>
 
 </head>
 
@@ -54,7 +59,7 @@
 			</div>
 
 			<div class="main-menu">
-				<h1 class="logo"><a href="index.html"><img src="./img/symbol.png" alt="문학동네 로고"></a></h1>
+				<h1 class="logo"><a href="index.html"><img src="./img/symbol.png" alt="문학동네 로고"></a><span>문학동네</span></h1>
 				<ul class="menu-contain">
 
 					<li class="menu-item books-intro"><a href="#">도서소개</a>
@@ -113,7 +118,7 @@
 								</ul>
 							</li>
 
-							<div id ="menu-bg-df"class="pic-contain">
+							<div id="menu-bg-df" class="pic-contain">
 								<a href="#" class="pic-inner">
 									<img src="./img/goods_01.jpg" alt="모래알만 한 진실이라도">
 									<div class="text-inner">
@@ -143,7 +148,7 @@
 								</a>
 							</div>
 
-							<div id ="menu-bg-essay"class="pic-contain">
+							<div id="menu-bg-essay" class="pic-contain">
 								<a href="#" class="pic-inner">
 									<img src="./img/goods_05.jpg" alt="그래도 마지막까지 삶을 산다는 것">
 									<div class="text-inner">
@@ -173,7 +178,7 @@
 								</a>
 							</div>
 
-							<div id="menu-bg-ko"class="pic-contain">
+							<div id="menu-bg-ko" class="pic-contain">
 								<a href="#" class="pic-inner">
 									<img src="./img/goods_08.jpg" alt="시선으로부터">
 									<div class="text-inner">
@@ -205,7 +210,7 @@
 								</a>
 							</div>
 
-							<div id="menu-bg-in"class="pic-contain">
+							<div id="menu-bg-in" class="pic-contain">
 								<a href="#" class="pic-inner">
 									<img src="./img/goods_11.jpg" alt="작가들의 비밀스러운 삶">
 									<div class="text-inner">
@@ -314,7 +319,7 @@
 							<li id="menu-supprot-bg" class="bg-contain active"></li>
 							<li id="menu-about-bg" class="bg-contain"></li>
 							<li class="depth-item" rel="menu-supprot-bg">Support
-								<ul class="depth-01" >
+								<ul class="depth-01">
 									<li class="menu-item"><a href="qna.html">자주묻는 질문</a></li>
 									<li class="menu-item"><a href="#">공지사항</a></li>
 									<li class="menu-item"><a href="#">문학동네 공모전</a></li>
@@ -324,7 +329,7 @@
 								</ul>
 							</li>
 							<li class="depth-item" rel="menu-about-bg">About Us
-								<ul class="depth-01" >
+								<ul class="depth-01">
 									<li class="menu-item"><a href="#">동네 책방</a></li>
 									<li class="menu-item"><a href="#">작가와의 만남</a></li>
 									<li class="menu-item"><a href="#">문학동네 북캐스트</a></li>
@@ -421,7 +426,7 @@
 					또한 문학동네는 국내와 해외를 가리지 않고 우수한 작품과 작가들을 소개하는 데도 힘쓰고 있습니다. <br>
 					문학동네는 한국 출판의 미래를 열어가는 자세로 오늘을 임하고 내일을 준비하고 있습니다.</p>
 
-					<a class="company-page_btn" href="brand.html"></a>
+				<a class="company-page_btn" href="brand.html"></a>
 			</article>
 			<i class="circle-el"></i>
 		</section>
@@ -431,7 +436,7 @@
 
 		<!-- 추천도서 배너 start -->
 
-		<section class="recom-book_banner">
+		<!-- <section class="recom-book_banner">
 			<article class="text_inner">
 				<h2 class="main-title">
 					Recommended<br>
@@ -446,6 +451,91 @@
 			<article class="book-slide">
 
 			</article>
+
+
+		</section> -->
+
+		<section class="recom-book_banner">
+		<div id="slideInner">
+				<h3>Best Item</h3>
+				<div id="list-contain">
+					<ul class="slider">
+						<li>
+							<a href="https://www.naver.com/"
+								><img src="./img/s-slide/xl-13.jpg" alt="노마드랜드" />
+								<strong class="title">노마드랜드</strong>
+								<span class="writer">책 저자</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/s-slide/xl-02.jpg" alt="img" />
+								<strong class="title">책 제목2</strong>
+								<span class="writer">책 저자</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/s-slide/xl-03.jpg" alt="img" />
+								<strong class="title">책 제목3</strong>
+								<span class="writer">책 저자</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/s-slide/xl-04.jpg" alt="img" />
+								<strong class="title">책 제목4</strong>
+								<span class="writer">책 저자</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/s-slide/xl-05.jpg" alt="img" />
+								<strong class="title">책 제목5</strong>
+								<span class="writer">책 저자</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/s-slide/xl-06.jpg" alt="img" />
+								<strong class="title">책 제목6</strong>
+								<span class="writer">책 저자</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/s-slide/xl-07.jpg" alt="img" />
+								<strong class="title">책 제목7</strong>
+								<span class="writer">책 저자</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/s-slide/xl-08.jpg" alt="img" />
+								<strong class="title">책 제목8</strong>
+								<span class="writer">책 저자</span>
+							</a>
+						</li>
+						<li>
+							<a href="#"
+							><img src="./img/s-slide/xl-09.jpg" alt="img" />
+								<strong class="title">책 제목9</strong>
+								<span class="writer">책 저자</span>
+							</a>
+						</li>
+						<li>
+							<a href="#"
+							><img src="./img/s-slide/xl-10.jpg" alt="img" />
+								<strong class="title">책 제목10</strong>
+								<span class="writer">책 저자</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" id="bx-prev"><img src="./img/icon/next.png" alt="arrow" /></a>
+				<a href="#" id="bx-next"><img src="./img/icon/next.png" alt="arrow" /></a>
+			</div>
+
 		</section>
 
 		<!--추천도서 배너 end -->
@@ -471,7 +561,7 @@
 		<!-- 전집 배너 end -->
 
 		<!--도서 슬라이드 start-->
-		<section class="book-slide_banner">
+		<!-- <section class="book-slide_banner">
 			<h3 class="main-title">지금 많이 읽고 있는 책</h3>
 			<article class="visual">
 				<div class="content_inner">
@@ -509,6 +599,94 @@
 						<p class="writer">최인호</p>
 					</div>
 				</div>
+			</article>
+		</section> -->
+
+		<section class="most-book_banner" id="most-Book">
+			<article class="inner">
+				<!--<ul class="pages">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>-->
+				<div class="text-contain">
+					<div class="wrap">
+						<div class="text-inner">
+							<h2 class="main-title">헤맨다고 모두 길을 잃는 것은 아니다</h2>
+							<p class="desc">
+								70만 독자가 공감한 김달 작가의 신작 에세이 <br>
+								단 하루도 쉽지 않았던 나를 위한 문장들
+							</p>
+							<a href="#" class="more-btn">자세히보기</a>
+						</div>
+					</div>
+					<div class="wrap">
+						<div class="text-inner">
+							<h2 class="main-title">당신의 신</h2>
+							<p class="desc">
+								“당신의 신이 되기 위해 당신과 결혼한 게 아니야.” <br>
+								‘우리’라는 폭력적 명명이 아닌 ‘나’와 ‘너’로 온전히 존재하기 위해, <br>
+								그녀는 쓴다.
+							</p>
+							<a href="#" class="more-btn">자세히보기</a>
+						</div>
+					</div>
+					<div class="wrap">
+						<div class="text-inner">
+							<h2 class="main-title">아직 멀었다는 말</h2>
+							<p class="desc">
+								소설의 품격과 깊이, 권여선 4년 만의 신작 소설집 <br>
+								제19회 이효석문학상 수상작 「모르는 영역」 수록
+							</p>
+							<a href="#" class="more-btn">자세히보기</a>
+						</div>
+					</div>
+					<div class="wrap">
+						<div class="text-inner">
+							<h2 class="main-title">서울에서 직장인으로 살아간다는 것</h2>
+							<p class="desc">
+								쉴 틈 없는 회사의 시간과 숨 돌릴 나만의 시간 사이
+							</p>
+							<a href="#" class="more-btn">자세히보기</a>
+						</div>
+					</div>
+					<div class="wrap">
+						<div class="text-inner">
+							<h2 class="main-title">날씨가 좋으면 찾아가겠어요</h2>
+							<p class="desc">
+								6년의 기다림 끝에 만나는 『사서함 110호의 우편물』 이도우의 최신 장편소설
+							</p>
+							<a href="#" class="more-btn">자세히보기</a>
+						</div>
+					</div>
+					<div class="controls">
+						<div class="prev-btn">&lt;</div>
+						<div class="next-btn">&gt;</div>
+						<div class="pager">
+							<span>01</span>
+							<ul class="state">
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<span>05</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="goods">
+					<img src="./img/book/xl38.jpg" alt="헤맨다고 모두 길을 잃은 것은 아니다">
+					<img src="./img/book/xl35.jpg" alt="당신의 신">
+					<img src="./img/book/xl36.jpg" alt="아직 멀었다는 말">
+					<img src="./img/book/xl37.jpg" alt="서울에서 직장인으로 살아간다는 것">
+					<img src="./img/book/xl39.jpg" alt="날씨가 좋으면 찾아가겠어요">
+				</div>
+
+
 			</article>
 		</section>
 		<!--도서 슬라이드 end-->
@@ -644,8 +822,8 @@
 				</ul>
 				<div id="notice" class="item selected">
 					<p class="banner-title">공지사항 <a href="#"><span class="material-icons-outlined icon">
-						add
-						</span></a></p>
+								add
+							</span></a></p>
 					<ul>
 						<li class="list-item">
 							<a href="#">
@@ -671,19 +849,13 @@
 								<p class="date">2022-01-03</p>
 							</a>
 						</li>
-						<li class="list-item">
-							<a href="#">
-								<p class="desc">2021년 문학동네신인상 발표</p>
-								<p class="date">2021-10-29</p>
-							</a>
-						</li>
 					</ul>
 				</div>
 
 				<div id="inquire" class="item">
 					<p class="banner-title">문의하기 <a href="#"><span class="material-icons-outlined icon">
-						add
-						</span></a></p>
+								add
+							</span></a></p>
 					<ul>
 						<li class="list-item">
 							<a href="#">
@@ -709,18 +881,12 @@
 								<p class="date">2022-02-22</p>
 							</a>
 						</li>
-						<li class="list-item">
-							<a href="#">
-								<p class="desc">책 파본 교환 문의</p>
-								<p class="date">2022-03-20</p>
-							</a>
-						</li>
 					</ul>
 				</div>
 				<div id="reference" class="item">
 					<p class="banner-title">자료실 <a href="#"><span class="material-icons-outlined icon">
-						add
-						</span></a></p>
+								add
+							</span></a></p>
 					<ul>
 						<li class="list-item">
 							<a href="#">
@@ -746,12 +912,6 @@
 								<p class="date">2022-02-04</p>
 							</a>
 						</li>
-						<li class="list-item">
-							<a href="#">
-								<p class="desc">문학동네출판그룹 도서목록 (2021년 상반기 출간도서)</p>
-								<p class="date">2022-02-04</p>
-							</a>
-						</li>
 					</ul>
 				</div>
 
@@ -765,8 +925,8 @@
 			<img src="./img/cafe-bg.png" alt="photo">
 			<div class="center-text_inner">
 				<h3 class="sub-titme">일상을 여행처럼,</h3>
-				<h2 class="main-title">Cafe<br>
-					Comma</h2>
+				<h2 class="main-title"><span>C</span>afe<br>
+					<span>C</span>omma</h2>
 			</div>
 			<div class="disc">
 				<p>‘COMMA’는 단어와 단어 사이, 문장과 문장 사이에서 쉼을 만듭니다. <br>
