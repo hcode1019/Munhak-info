@@ -33,6 +33,80 @@ font-family: 'Black Han Sans', sans-serif; */
 }
 /* 대슬라이드 end */
 
+/*인기도서 목록 슬라이드 start*/
+
+.fav-book_banner{
+  width:100%;
+  overflow:hidden;
+}
+.fav-book_banner .books-contain,
+.fav-book_banner .promotion{
+  width:50%;
+  float:left;
+}
+.fav-book_banner .books-contain{
+  position:relative;
+  background-color: #031858;
+}
+.fav-book_banner .books-contain .books-item{
+  height:100px;
+  overflow:hidden;
+  position:relative;
+}
+.fav-book_banner .books-contain .books-item .book-list{
+  width:100%;
+  height:100px;
+  position:absolute;
+  top:0;
+}
+.fav-book_banner .books-contain .books-item .book-list li {
+  line-height:100px;
+  width:80%;
+  margin:0 auto;
+}
+.fav-book_banner .books-contain .books-item .book-list li a{
+  display:inline-block;
+  width:80%;
+  overflow:hidden;
+  font-size:1.25rem;
+  color:#fff;
+}
+.fav-book_banner .books-contain .books-item .book-list li a:hover{
+  text-decoration: underline;
+}
+.fav-book_banner .books-contain .books-item .book-list li span{
+  display:inline-block;
+  width:20%;
+  font-size:1rem;
+  overflow:hidden;
+  color:#fff;
+  cursor:pointer;
+}
+.fav-book_banner .books-contain .books-item #rl-btn{
+  position:absolute;
+  right:1rem;
+  top:0;
+  bottom:0;
+  height:60px;
+  margin:auto 0;
+}
+.fav-book_banner .books-contain .books-item #rl-btn a{
+  display:block;
+  width:20px;
+  height:20px;
+  text-align: center;
+  vertical-align: middle;
+  color:#fff;
+}
+.fav-book_banner .books-contain .books-item #rl-btn a:first-child{
+  margin-bottom:20px;
+}
+.fav-book_banner .promotion{
+  height:100px;
+}
+
+/*인기도서 목록 슬라이드 end*/
+
 /* 회사소개 배너 start */
 
 /* 구회사소개배너 css */
@@ -244,67 +318,83 @@ font-family: 'Black Han Sans', sans-serif; */
   line-height: 1.8;
   color: #666;
 } */
-.recom-book_banner{
-  width:100%;
-  position:relative;
+.recom-book_banner {
+  width: 80%;
+  margin: 10rem auto;
+  position: relative;
 }
 .recom-book_banner #slideInner {
   margin: 40px 0;
-  overflow:hidden;
+  overflow: hidden;
   text-align: center;
-  position: relative;
 }
-.recom-book_banner #slideInner #list-contain {
+.recom-book_banner #slideInner > h3 {
+  font-size: 2.5rem;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+.recom-book_banner #slideInner .list-item {
+  display: flex;
+}
+.recom-book_banner #slideInner .list-item li {
+  padding: 5px 12px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.recom-book_banner #slideInner .list-contain {
   width: 100%;
-  padding: 3% 0 0;
-  height:700px;
   margin: 0 auto;
   position: relative;
+  display: none;
 }
-.recom-book_banner #slideInner #list-contain ul {
+.recom-book_banner #slideInner .list-contain.on {
+  display: block;
 }
-.recom-book_banner #slideInner #list-contain ul li {
-
+.recom-book_banner #slideInner .list-contain ul {
 }
-.recom-book_banner #slideInner #list-contain ul li img {
+.recom-book_banner #slideInner .list-contain ul li {
+}
+.recom-book_banner #slideInner .list-contain ul li img {
   width: 100%;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
-.recom-book_banner #slideInner #list-contain ul li .title {
+.recom-book_banner #slideInner .list-contain ul li .title {
   font-size: 1rem;
-  display:block;
-  margin-bottom:12px;
+  display: block;
+  margin-bottom: 12px;
 }
-.recom-book_banner #slideInner #list-contain ul li .writer {
+.recom-book_banner #slideInner .list-contain ul li .writer {
   font-size: 1rem;
-  display:block;
+  display: block;
 }
-.recom-book_banner #slideInner #list-contain ul li a:hover .writer {
+.recom-book_banner #slideInner .list-contain ul li a:hover .writer {
 }
-.recom-book_banner #slideInner #bx-prev,
-.recom-book_banner #slideInner #bx-next {
-  display:block;
+.recom-book_banner #slideInner .list-contain .bx-prev,
+.recom-book_banner #slideInner .list-contain .bx-next {
+  display: block;
   position: absolute;
   width: 30px;
   height: 30px;
   top: 0;
   bottom: 0;
   margin: auto 0;
-  z-index:5;
+  z-index: 5;
 }
-.recom-book_banner #slideInner #bx-prev {
-  left: 7%;
+.recom-book_banner #slideInner .list-contain .bx-prev {
+  /*left: 7%;*/
+  left: 0;
 }
-.recom-book_banner #slideInner #bx-next {
-  right: 7%;
+.recom-book_banner #slideInner .list-contain .bx-next {
+  /*right: 7%;*/
+  right: 0;
 }
-.recom-book_banner #slideInner #bx-prev img,
-.recom-book_banner #slideInner #bx-next img {
+.recom-book_banner #slideInner .list-contain .bx-prev img,
+.recom-book_banner #slideInner .list-contain .bx-next img {
   width: 100%;
   border: none;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
-.recom-book_banner #slideInner #bx-prev img {
+.recom-book_banner #slideInner .list-contain .bx-prev img {
   transform: rotate(180deg);
 }
 /*추천도서배너 end*/
@@ -424,14 +514,14 @@ font-family: 'Black Han Sans', sans-serif; */
   width: 100%;
   height: 50vw;
   overflow: hidden;
-  margin-bottom:5rem;
+  margin-bottom: 5rem;
   /*border: 1px solid black;*/
 }
 .most-book_banner .inner {
   width: 80%;
   position: relative;
   margin: 0 auto;
-  height:100%;
+  height: 100%;
 }
 .most-book_banner .inner .pages {
   width: 6%;
@@ -457,14 +547,17 @@ font-family: 'Black Han Sans', sans-serif; */
   width: 40%;
   float: left;
   position: relative;
-  height:50%;
-  margin-top:15%;
-
+  height: 50%;
+  margin-top: 10%;
 }
-.most-book_banner .inner .text-contain .wrap{
+.most-book_banner .inner .banner-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.most-book_banner .inner .text-contain .wrap {
   display: none;
 }
-.most-book_banner .inner .text-contain .wrap.active{
+.most-book_banner .inner .text-contain .wrap.active {
   display: block;
 }
 .most-book_banner .inner .text-contain .text-inner {
@@ -478,14 +571,14 @@ font-family: 'Black Han Sans', sans-serif; */
   font-size: 2.4rem;
   line-height: 3rem;
   color: #333;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 .most-book_banner .inner .text-contain .text-inner .desc {
   font-size: 1.2rem;
   line-height: 2rem;
   height: 4rem;
   color: #666;
-  margin-bottom:5rem;
+  margin-bottom: 5rem;
 }
 .most-book_banner .inner .text-contain .text-inner .more-btn {
   background-color: #333;
@@ -497,52 +590,52 @@ font-family: 'Black Han Sans', sans-serif; */
   width: 150px;
   text-align: center;
   font-weight: bold;
-  transition: .3s;
+  transition: 0.3s;
 }
-.most-book_banner .inner .text-contain .text-inner .more-btn:hover{
+.most-book_banner .inner .text-contain .text-inner .more-btn:hover {
   background-color: #fff;
   color: #333;
 }
-.most-book_banner .inner .controls{
+.most-book_banner .inner .controls {
   position: absolute;
-  left:0;
-  bottom:10%;
-  font-weight:bold;
-  display:flex;
+  left: 0;
+  bottom: 10%;
+  font-weight: bold;
+  display: flex;
   vertical-align: middle;
-  color:#333;
+  color: #333;
   font-weight: bold;
 }
 .most-book_banner .inner .controls .prev-btn,
-.most-book_banner .inner .controls .next-btn{
-  display:inline-block;
-  margin:0 1rem;
+.most-book_banner .inner .controls .next-btn {
+  display: inline-block;
+  margin: 0 1rem;
   cursor: pointer;
 }
 
-.most-book_banner .inner .controls .pager{
-  overflow:hidden;
-  margin-left:2rem;
+.most-book_banner .inner .controls .pager {
+  overflow: hidden;
+  margin-left: 2rem;
 }
-.most-book_banner .inner .controls .pager span{
-  font-size:1rem;
-  height:1rem;
+.most-book_banner .inner .controls .pager span {
+  font-size: 1rem;
+  height: 1rem;
 }
-.most-book_banner .inner .controls .pager .state{
-  display:inline-block;
-  margin:0 1rem;
+.most-book_banner .inner .controls .pager .state {
+  display: inline-block;
+  margin: 0 1rem;
 }
-.most-book_banner .inner .controls .pager .state li{
-  width:20px;
-  height:7px;
+.most-book_banner .inner .controls .pager .state li {
+  width: 20px;
+  height: 7px;
   background-color: #cecece;
-  float:left;
+  float: left;
 }
-.most-book_banner .inner .controls .pager .state li.active{
+.most-book_banner .inner .controls .pager .state li.active {
   background-color: #272727;
 }
 .most-book_banner .inner .goods {
-  width:30%;
+  width: 30%;
   position: absolute;
   top: 0;
   right: 0;
@@ -551,15 +644,15 @@ font-family: 'Black Han Sans', sans-serif; */
   display: block;
   width: 100%;
   position: absolute;
-  opacity:0;
+  opacity: 0;
   transform-origin: center 200%;
-  transition: .7s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 .most-book_banner .inner .goods img.active {
   opacity: 1;
   transform: rotate(0deg);
 }
-.most-book_banner .inner .goods img.next{
+.most-book_banner .inner .goods img.next {
   transform: rotate(20deg);
 }
 .most-book_banner .inner .goods img.prev {
@@ -631,10 +724,10 @@ font-family: 'Black Han Sans', sans-serif; */
   color: #000f3e;
   font-weight: 400;
   margin: 0 0 0.625rem;
-  opacity:0;
+  opacity: 0;
   transition: opacity 0.4s 0s ease-out;
 }
-.book-cast_banner:hover .text-inner .sub-title{
+.book-cast_banner:hover .text-inner .sub-title {
   opacity: 1;
   transition: opacity 1s 4s ease-out;
 }
@@ -644,10 +737,10 @@ font-family: 'Black Han Sans', sans-serif; */
   color: #333;
   font-weight: bold;
   margin: 0 0 1.5rem;
-  opacity:0;
+  opacity: 0;
   transition: opacity 0.4s 0s ease-out;
 }
-.book-cast_banner:hover .text-inner .main-title{
+.book-cast_banner:hover .text-inner .main-title {
   opacity: 1;
   transition: opacity 1s 4.4s ease-out;
 }
@@ -657,10 +750,10 @@ font-family: 'Black Han Sans', sans-serif; */
   color: #333;
   margin-bottom: 2.2rem;
   line-height: 1.8;
-  opacity:0;
+  opacity: 0;
   transition: opacity 0.4s 0s ease-out;
 }
-.book-cast_banner:hover .text-inner .disc{
+.book-cast_banner:hover .text-inner .disc {
   opacity: 1;
   transition: opacity 1s 4.8s ease-out;
 }
@@ -670,10 +763,10 @@ font-family: 'Black Han Sans', sans-serif; */
   border-radius: 0;
   color: #fff;
   background-color: #333;
-  opacity:0;
+  opacity: 0;
   transition: opacity 0.4s 0s ease-out;
 }
-.book-cast_banner:hover .text-inner .btn{
+.book-cast_banner:hover .text-inner .btn {
   opacity: 1;
   transition: opacity 1s 5.2s ease-out;
 }
@@ -1149,7 +1242,7 @@ section.event_banner article:last-child {
 }
 .notice-banner .banner-contain {
   width: 35%;
-  margin-right:10%;
+  margin-right: 10%;
   float: right;
 }
 .notice-banner .photo-contain .bg-filter {
@@ -1234,10 +1327,10 @@ section.event_banner article:last-child {
   font-size: 1.8rem;
   line-height: 70px;
   color: rgb(185, 185, 185);
-  transition: .3s;
+  transition: 0.3s;
 }
-.notice-banner .banner-contain .banner-title a .icon:hover{
-  color:#1d2d7b;
+.notice-banner .banner-contain .banner-title a .icon:hover {
+  color: #1d2d7b;
 }
 .notice-banner .banner-contain > div.item {
   display: none;
@@ -1246,24 +1339,24 @@ section.event_banner article:last-child {
   display: block;
 }
 .notice-banner .banner-contain ul {
-  overflow:hidden;
+  overflow: hidden;
 }
 .notice-banner .banner-contain ul .list-item {
-  width:50%;
-  float:left;
+  width: 50%;
+  float: left;
 }
 .notice-banner .banner-contain ul .list-item > a {
   display: block;
   overflow: hidden;
   border: 1px solid rgb(210, 210, 210);
-  padding:1rem;
+  padding: 1rem;
 }
-.notice-banner .banner-contain ul .list-item:nth-child(2n - 1) > a{
-  border-right:none;
+.notice-banner .banner-contain ul .list-item:nth-child(2n - 1) > a {
+  border-right: none;
 }
 .notice-banner .banner-contain ul .list-item:nth-child(1) > a,
-.notice-banner .banner-contain ul .list-item:nth-child(2) > a{
-  border-bottom:none;
+.notice-banner .banner-contain ul .list-item:nth-child(2) > a {
+  border-bottom: none;
 }
 
 .notice-banner .banner-contain ul .list-item > a .desc {
@@ -1271,7 +1364,7 @@ section.event_banner article:last-child {
   font-size: 1rem;
   height: 3rem;
   color: #333;
-  margin-bottom:1.5rem;
+  margin-bottom: 1.5rem;
   font-weight: bold;
 }
 .notice-banner .banner-contain ul .list-item > a:hover .desc {
@@ -1325,12 +1418,12 @@ section.event_banner article:last-child {
 .cafe-comma_banner .center-text_inner .main-title {
   font-size: 4rem;
   font-weight: 900;
-  line-height:1;
+  line-height: 1;
   margin-top: 1.4rem;
   vertical-align: bottom;
 }
-.cafe-comma_banner .center-text_inner .main-title span{
-  font-size:6rem;
+.cafe-comma_banner .center-text_inner .main-title span {
+  font-size: 6rem;
 }
 .cafe-comma_banner .disc {
   position: absolute;
@@ -1342,7 +1435,7 @@ section.event_banner article:last-child {
   transition: all 1s 0s linear;
 }
 .cafe-comma_banner:hover .disc {
-  transition: all 1s 0.6s linear;
+  transition: all 1s 0.5s ease-out;
   opacity: 1;
   left: 10%;
 }
@@ -1482,7 +1575,7 @@ section.event_banner article:last-child {
   line-height: 60px;
   font-size: 1.8rem;
   font-weight: 400;
-  color:#fff;
+  color: #fff;
 }
 
 /*퀵메뉴 end*/
