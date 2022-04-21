@@ -29,11 +29,12 @@
 	<!--<script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>-->
 	<!--제이쿼리 최신버전-->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<!--slider.js-->
+	<script src="./plugins/slider-custom.js"></script>
 	<!--bx slider-->
 	<script src="./plugins/jquery.bxslider.min.js"></script>
 	<!--rolling.js-->
 	<script src="./plugins/rolling.js"></script>
-
 
 	<!--Js file -->
 	<!--메뉴에 해당하는 js-->
@@ -321,7 +322,6 @@
 					<li class="menu-item about ano-type left-el"><a href="#">고객지원</a>
 						<ul class="depth-contain">
 							<li id="menu-supprot-bg" class="bg-contain active"></li>
-							<li id="menu-about-bg" class="bg-contain"></li>
 							<li class="depth-item" rel="menu-supprot-bg">Support
 								<ul class="depth-01">
 									<li class="menu-item"><a href="qna.html">자주묻는 질문</a></li>
@@ -391,47 +391,15 @@
 
 		<!-- 대슬라이드 start -->
 		<section class="main_slide">
-			<article class="main_visual">
-				<img src="img/slide/slide_16.jpg" alt="너무 한낮의 연애 슬라이드">
-			</article>
+			<ul class="main-slider">
+				<li class="slide"><a href="javascript:void[0];"><img src="./img/slides/slide_12.jpg" alt="slide" /></a></li>
+				<li class="slide"><a href="javascript:void[0];"><img src="./img/slides/slide_09.jpg" alt="slide" /></a></li>
+				<li class="slide"><a href="javascript:void[0];"><img src="./img/slides/slide_03.jpg" alt="slide" /></a></li>
+				<li class="slide"><a href="javascript:void[0];"><img src="./img/slides/slide_07.jpg" alt="slide" /></a></li>
+				<li class="slide"><a href="javascript:void[0];"><img src="./img/slides/slide_01.jpg" alt="slide" /></a></li>
+			</ul>
 		</section>
 		<!-- 대슬라이드 end -->
-
-		<!--인기도서 목록 슬라이드 start-->
-		<section class="fav-book_banner">
-			<div id="rl-notice" class="books-contain">
-				<div class="books-item">
-					<ul class="book-list">
-						<li>
-							<a href="#">1. 왜 아가리로만 할까?</a
-							><span class="date">2022-04-20</span>
-						</li>
-						<li>
-							<a href="#">2. 물고기는 존재하지 않는다</a
-							><span class="date">2022-03-22</span>
-						</li>
-						<li>
-							<a href="#">3. 잘했고 잘하고 있고 잘 될 것이다 </a
-							><span class="date">2021-12-04</span>
-						</li>
-						<li>
-							<a href="#">4. 보이지 않는 곳에서 애쓰고 있는 너에게 </a
-							><span class="date">2021-10-19</span>
-						</li>
-						<li>
-							<a href="#">5. 나는 당신이 행복했으면 좋겠습니다 </a
-							><span class="date">2021-07-18</span>
-						</li>
-					</ul>
-					<span id="rl-btn">
-						<a href="#" class="prev">▲</a>
-						<a href="#" class="next">▼</a>
-					</span>
-				</div>
-			</div>
-			<div class="promotion"></div>
-		</section>
-		<!--인기도서 목록 슬라이드 end-->
 
 		<!--회사 소개 배너 start -->
 
@@ -468,11 +436,33 @@
 
 				<a class="company-page_btn" href="brand.html"></a>
 			</article>
-			<i class="circle-el"></i>
 		</section>
 
 
 		<!--회사 소개 배너 end -->
+
+
+		<!--카테고리 배너(아코디언) start-->
+
+		<section class="cate_banner">
+			<article class="inner">
+				<a href="javascript:void[0];" class="item list-item"><div class="bg-contnt"></div><div class="text-content">에세이</div></a>
+				<div class="item double">
+					<h3 class="banner_title">CATEGORY</h3>
+					<h2 class="title">
+						READING MAKES <br>
+						LIFE RICH</h2>
+					<p class="desc">문학동네는 아름다운 작품을 소개하기 위해 최선을 다하고 있습니다.</p>
+				</div>
+				<a href="javascript:void[0];" class="item list-item"><div class="bg-contnt"></div><div class="text-content">인문학</div></a>
+				<a href="javascript:void[0];" class="item list-item"><div class="bg-contnt"></div><div class="text-content">소설</div></a>
+				<a href="javascript:void[0];" class="item list-item"><div class="bg-contnt"></div><div class="text-content">여행</div></a>
+				<a href="javascript:void[0];" class="item list-item"><div class="bg-contnt"></div><div class="text-content">요리</div></a>
+				<a href="javascript:void[0];" class="item list-item"><div class="bg-contnt"></div><div class="text-content">예술</div></a>
+			</article>
+		</section>
+
+		<!--카테고리 배너(아코디언) end-->
 
 		<!-- 추천도서 배너 start -->
 
@@ -1052,13 +1042,32 @@
 		</section>
 		<!-- 공지사항 배너 end -->
 
+		<!--인재채용 배너 start -->
+
+		<section class="rec_banner">
+			<video src="./video/rec-video.mp4" muted autoplay loop preload="auto"></video>
+			<div class="content">
+				<h4 class="title">출판그룹 문학동네와 <br>
+					함께 나아갈 인재 여러분을 찾습니다</h4>
+
+				<p class="desc">
+					저자와 독자 모두가 행복한 이야기를 이어갈 수 있도록 문학동네와 함께할 분을 찾습니다.
+				</p>
+
+				<a class="more-btn" href="#">자세히 보기</a>
+			</div>
+		</section>
+
+		<!--인재채용 배너 end -->
+
 		<!-- 카페꼼마 start -->
 		<section class="cafe-comma_banner">
 			<img src="./img/cafe-bg.png" alt="photo">
 			<div class="center-text_inner">
-				<h3 class="sub-titme">일상을 여행처럼,</h3>
-				<h2 class="main-title"><span>C</span>afe<br>
-					<span>C</span>omma
+				<h3 class="sub-title">일상을 여행처럼,</h3>
+				<h2 class="main-title">
+					<div class="left-item">C</div>
+					<div class="right-item"><span>AFE</span><span>OMMA</span></div>
 				</h2>
 			</div>
 			<div class="disc">
@@ -1139,6 +1148,39 @@
 			</ul>
 		</section>
 		<!--퀵메뉴 end-->
+
+		<!--인기도서 목록 슬라이드 start-->
+		<section class="fav-book_banner">
+			<div id="rl-notice" class="books-contain">
+				<div class="books-item">
+					<h3 class="banner-title">
+						인기도서
+					</h3>
+					<ul class="book-list">
+						<li>
+							<a href="javascript:void[0];">1. 왜 아가리로만 할까?</a><span class="rank">-</span>
+						</li>
+						<li>
+							<a href="javascript:void[0];">2. 물고기는 존재하지 않는다</a><span class="rank">▼ 1</span>
+						</li>
+						<li>
+							<a href="javascript:void[0];">3. 잘했고 잘하고 있고 잘 될 것이다 </a><span class="rank">▲ 2</span>
+						</li>
+						<li>
+							<a href="javascript:void[0];">4. 보이지 않는 곳에서 애쓰고 있는 너에게 </a><span class="rank">▲ 7</span>
+						</li>
+						<li>
+							<a href="javascript:void[0];">5. 나는 당신이 행복했으면 좋겠습니다 </a><span class="rank">▼ 2</span>
+						</li>
+					</ul>
+					<span id="rl-btn">
+						<a href="#" class="prev">▲</a>
+						<a href="#" class="next">▼</a>
+					</span>
+				</div>
+			</div>
+		</section>
+		<!--인기도서 목록 슬라이드 end-->
 
 		<!-- 구글맵 시작 -->
 		<section class="google-map_sec">

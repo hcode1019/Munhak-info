@@ -14,7 +14,7 @@ var autoPlay = autoStart;
 
 var auto = null;
 
-var speed = 3000;
+var speed = 5000;
 
 var timer = null;
 

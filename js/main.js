@@ -3,6 +3,10 @@ $(function () {
     $(this).children(".bg-contain,.para-inner,.circle-el").addClass("active");
   });
 
+  $(window).on("load", function () {
+    $(".main-slider").slider({ height: "52.625vw" });
+  });
+
   //구글맵
   $("#googleMapBtn").click(function () {
     $(".google-map_sec").show(); //버튼이 클릭되면 구글맵 배너 블럭
@@ -23,6 +27,12 @@ $(function () {
     $(".banner-contain .item").removeClass("selected"); //모든 배너 숨기기
     $(targetEl).addClass("selected"); //해당 rel값을 가진 아이디 요소 보여짐
   });
+
+  //카테고리 배너
+  $(".cate_banner").hover(function(){
+    $(this).find(".item").addClass("active");
+  })
+
 
   //인기도서 슬라이드
 
@@ -78,16 +88,13 @@ $(function () {
     $(".most-book_banner .wrap:nth-child(" + i + ")").addClass("active");
   }
 
-  var showEl = { display: "block" },
-    hideEl = { display: "none" },
-    tab_menu = "#slideInner .list-item li",
-    slideItems = "#slideInner .list-contain";
+    //도서 슬라이드 메뉴
+  var slideItems = "#slideInner .list-contain";
 
   //$(tab_menu + ":first-child").css({ fontWeight: "bold" });
   $(slideItems).removeClass("on");
   $(slideItems).filter(".essay").addClass("on");
 
-  //도서 슬라이드 메뉴
   var mySlider = $("#slideInner .list-contain .slider").bxSlider({
     mode: "horizontal", // 가로 방향 수평 슬라이드
     speed: 500, // 이동 속도를 설정
@@ -104,16 +111,6 @@ $(function () {
       $(".bxslider li img").css("display", "block");
     },
   });
-
-  /*$(tab_menu).click(function () {
-    $(tab_menu).css({ fontWeight: "400" });
-    $(this).css({ fontWeight: "bold" });
-    var targetSlide = $(this).attr("rel");
-    $(slideItems).removeClass("on");
-    $(slideItems)
-      .filter("." + targetSlide)
-      .addClass("on");
-  }); */
 
   $(".list-contain .bx-prev").click(function () {
     mySlider.goToPrevSlide();

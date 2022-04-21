@@ -211,19 +211,21 @@ nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .b
   top:0;
   bottom:0;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom 20%;
   background-repeat: no-repeat;
-  opacity:0;
   transition: 1.2s ease;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .bg-contain.active{
-  opacity:1;
-}
 nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .bg-contain#menu-supprot-bg{
-  background-image: url(../img/menu-bg-04.jpg);
+  background-image: url(../img/menu-sup-bg.jpg);
 }
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .bg-contain#menu-about-bg{
-  background-image: url(../img/menu-bg-05.jpg);
+nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .bg-contain#menu-supprot-bg::before{
+  content:"";
+  position: absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  background-color: rgba(0,0,0,.7);
 }
 nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item > .depth-01{
   width:100%;
@@ -431,7 +433,7 @@ nav .main-menu .menu-contain > .books-intro > .depth-contain > .pic-contain > .p
 
 /*회사소개 메뉴 시작*/
 nav .main-menu .menu-contain > .company > .depth-contain > .pic-contain {
-  background: url(../img/goods_14.jpg) no-repeat;
+  background: url(../img/menu-sup-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center bottom 10%;
   position: absolute;
@@ -513,7 +515,7 @@ nav .main-menu .sup-menu > .menu-item span {
   left: 0;
   top: 0;
   width: 100%;
-  height: 150px;
+  height: 350px;
   background-color: #fff;
   border-bottom: 1px solid #999;
   display: none;
@@ -530,17 +532,17 @@ nav .main-menu .sup-menu > .menu-item span {
 }
 .search-item form input[type="search"] {
   position: absolute;
-  width: 25%;
-  height: 2.4rem;
+  width: 35%;
+  height: 3rem;
   left: 0;
   right: 0;
-  top: 30px;
+  top: 100px;
   margin: auto;
   padding: 0 1rem;
-  border: 2px solid #1d2d7b;
+  border: 3px solid #1d2d7b;
   color: #333;
   font-weight: bold;
-  font-size: 0.875rem;
+  font-size: 1.2rem;
 }
 .search-item form input[type="search"]::-webkit-search-cancel-button {
   display: none;
@@ -550,8 +552,8 @@ nav .main-menu .sup-menu > .menu-item span {
 }
 .search-item form label {
   position: absolute;
-  left: calc(61% - 1rem);
-  top: calc(30px + 0.3rem);
+  left: calc(65% - 1rem);
+  top: calc(100px + 0.6rem);
   height: 1.8rem;
 }
 .search-item form label span {
@@ -581,22 +583,23 @@ nav .main-menu .sup-menu > .menu-item span {
   color: #666;
 }
 .search-item .tags {
-  width: 25%;
+  width: 35%;
   position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
-  bottom: 20px;
+  bottom: 50px;
   overflow: hidden;
 }
 .search-item .tags .tag-item {
   float: left;
-  padding: 4px 12px;
-  border: 1px solid #6e77a7;
+  padding: 10px 24px;
+  border: 2px solid #6e77a7;
   color: #6e77a7;
+  font-weight:bold;
   margin-right: 8px;
-  border-radius: 12px;
-  font-size: 0.875rem;
+  border-radius: 20px;
+  font-size: 1rem;
   background-color: #fff;
   cursor: pointer;
 }
