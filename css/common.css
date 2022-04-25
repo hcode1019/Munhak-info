@@ -102,11 +102,11 @@ nav .main-menu .logo {
   width: 10%;
   float: left;
 }
-nav .main-menu .logo > span{
-  display:block;
-  width:0px;
-  height:0px;
-  font-size:0;
+nav .main-menu .logo > span {
+  display: block;
+  width: 0px;
+  height: 0px;
+  font-size: 0;
 }
 nav .main-menu .logo a img {
   height: 40px;
@@ -160,7 +160,7 @@ nav .main-menu .menu-contain > .menu-item > .depth-contain {
 }
 nav .main-menu .menu-contain > .menu-item:hover > .depth-contain {
   display: block;
-  border-top:1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
 }
 nav .main-menu .menu-contain > .menu-item > .depth-contain > .depth-item {
   width: 80%;
@@ -173,139 +173,138 @@ nav .main-menu .menu-contain > .menu-item > .depth-contain > .depth-item > .dept
   padding-top: 1rem;
 }
 /*고객지원 about 메뉴 스타일 별도지정 start*/
-nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .depth-item > .depth-01{
-  width:50%;
-  float:right;
-  overflow:hidden;
-  margin-top:6%;
-  padding:0;
+nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .depth-item > .depth-01 {
+  width: 50%;
+  float: right;
+  overflow: hidden;
+  margin-top: 6%;
+  padding: 0;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .depth-item > .depth-01 >.menu-item{
-  width:50%;
-  float:left;
+nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .depth-item > .depth-01 > .menu-item {
+  width: 50%;
+  float: left;
 }
 /*left-el start*/
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain{
+nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain {
   padding: 2rem 25%;
-  border-top:none;
+  border-top: none;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item{
-  width:50%;
-  float:left;
-  font-size:2rem;
-  font-weight:bold;
-  color:rgba(255,255,255,.5);
-  font-family: 'Nanum Myeongjo', serif;
-  position:relative;
+nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item {
+  width: 50%;
+  float: left;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Nanum Myeongjo", serif;
+  position: relative;
   text-align: left;
-  transition: .3s;
+  transition: 0.3s;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item:hover{
-  color:rgba(255,255,255,1);
+nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .bg-contain{
-  position:absolute;
-  left:0;
-  right:0;
-  top:0;
-  bottom:0;
+nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .bg-contain {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   background-size: cover;
   background-position: center bottom 20%;
   background-repeat: no-repeat;
   transition: 1.2s ease;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .bg-contain#menu-supprot-bg{
-  background-image: url(../img/menu-sup-bg.jpg);
+nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .bg-contain#menu-supprot-bg {
+  background-image: url(../img/sup-bg.jpg);
 }
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .bg-contain#menu-supprot-bg::before{
-  content:"";
+nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .bg-contain#menu-supprot-bg::before {
+  content: "";
   position: absolute;
-  left:0;
-  top:0;
-  bottom:0;
-  right:0;
-  background-color: rgba(0,0,0,.7);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item > .depth-01{
-  width:100%;
-  overflow:hidden;
+nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item > .depth-01 {
+  width: 100%;
+  overflow: hidden;
 }
 
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item > .depth-01 >.menu-item {
-  float:left;
-  width:50%;
+nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item > .depth-01 > .menu-item {
+  float: left;
+  width: 50%;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item > .depth-01 >.menu-item >a {
-  font-family: 'Nanum Gothic', sans-serif;
-  color:rgba(255,255,255,.5);
+nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item > .depth-01 > .menu-item > a {
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
 }
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item > .depth-01 >.menu-item > a:hover{
-  text-decoration: underline  ;
+nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item > .depth-01 > .menu-item > a:hover {
+  text-decoration: underline;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item > .depth-01>.menu-item:hover  > a{
-  color:rgba(255,255,255,1);
+nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item > .depth-01 > .menu-item:hover > a {
+  color: rgba(255, 255, 255, 1);
 }
-nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item > .depth-01 >.menu-item > a:after{
+nav .main-menu .menu-contain > .menu-item.ano-type.left-el > .depth-contain > .depth-item > .depth-01 > .menu-item > a:after {
   display: none;
 }
 /*left-el end*/
 nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .depth-item > .depth-01 > .menu-item > a::after {
-  right:20%;
+  right: 20%;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .depth-item > .depth-01 > .menu-item:hover > a::after{
-  right:15%;
+nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .depth-item > .depth-01 > .menu-item:hover > a::after {
+  right: 15%;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain{
-  width:30%;
-  top:20%;
-  left:10%;
-  height:56.25%;
-  position:absolute;
+nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain {
+  width: 30%;
+  top: 20%;
+  left: 10%;
+  height: 56.25%;
+  position: absolute;
   background: url(../img/menu-sup-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  overflow:hidden;
+  overflow: hidden;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain:after{
-  content:"";
-  width:100%;
-  height:100%;
-  background-color: rgba(0,0,0,.5);
-  left:0;
-  top:0;
-  position:absolute;
+nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  position: absolute;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain > div{
-  position:absolute;
-  color:#fff;
-  z-index:2;
+nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain > div {
+  position: absolute;
+  color: #fff;
+  z-index: 2;
   text-align: left;
-  padding-left:5%;
-  width:100%;
-  bottom:0;
+  padding-left: 5%;
+  width: 100%;
+  bottom: 0;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain > div > p{
-  font-size:1.6rem;
-  font-weight:bold;
-  margin-bottom:0;
-  line-height:1.4;
+nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain > div > p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1.4;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain > div > p:nth-of-type(1){
+nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain > div > p:nth-of-type(1) {
   margin-bottom: 2rem;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain > div > p >span{
-  font-size:1rem;
-  font-weight:400;
+nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain > div > p > span {
+  font-size: 1rem;
+  font-weight: 400;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain > div >  p.more{
-  font-size:1rem;
-  margin-bottom:1rem;
+nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain > div > p.more {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
-nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain:hover > div > p.more span{
+nav .main-menu .menu-contain > .menu-item.ano-type > .depth-contain > .contain:hover > div > p.more span {
   text-decoration: underline;
 }
-
 
 /*고객지원 about 메뉴 스타일 별도지정 end*/
 nav .main-menu .menu-contain > .menu-item > .depth-contain > .depth-item > .depth-01 > .menu-item {
@@ -403,7 +402,7 @@ nav .main-menu .menu-contain > .books-intro:hover > .depth-contain > .pic-contai
   margin-right: 2%;
   position: relative;
   border-radius: 20px;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 nav .main-menu .menu-contain > .books-intro > .depth-contain > .pic-contain > .pic-inner:last-child {
@@ -433,15 +432,15 @@ nav .main-menu .menu-contain > .books-intro > .depth-contain > .pic-contain > .p
 
 /*회사소개 메뉴 시작*/
 nav .main-menu .menu-contain > .company > .depth-contain > .pic-contain {
-  background: url(../img/menu-sup-bg.jpg) no-repeat;
+  background: url(../img/company-bg-02.jpg) no-repeat;
   background-size: cover;
   background-position: center bottom 10%;
   position: absolute;
   left: 37%;
   /*width: 53%;*/
-  right:10%;
-  top: 0;
-  bottom:0;
+  right: 10%;
+  top: 10%;
+  bottom: 10%;
 }
 /*nav .main-menu .menu-contain > .company > .depth-contain > .pic-contain > .pic-inner {
   float: right;
@@ -478,11 +477,9 @@ nav .main-menu .menu-contain > .book-club > .depth-contain > .pic-contain > .pic
 }
 nav .main-menu .menu-contain > .menu-item > .depth-contain #menu-bg-essay,
 nav .main-menu .menu-contain > .menu-item > .depth-contain #menu-bg-ko,
-nav .main-menu .menu-contain > .menu-item > .depth-contain #menu-bg-in{
-  display:none;
+nav .main-menu .menu-contain > .menu-item > .depth-contain #menu-bg-in {
+  display: none;
 }
-
-
 
 /* 북클럽 메뉴 종료*/
 
@@ -539,7 +536,7 @@ nav .main-menu .sup-menu > .menu-item span {
   top: 100px;
   margin: auto;
   padding: 0 1rem;
-  border: 3px solid #1d2d7b;
+  border: 5px solid #35469b;
   color: #333;
   font-weight: bold;
   font-size: 1.2rem;
@@ -559,7 +556,7 @@ nav .main-menu .sup-menu > .menu-item span {
 .search-item form label span {
   font-size: 1.8rem;
   cursor: pointer;
-  color: #1d2d7b;
+  color: #35469b;
   vertical-align: middle;
 }
 .search-item .close-btn {
@@ -590,13 +587,15 @@ nav .main-menu .sup-menu > .menu-item span {
   margin: 0 auto;
   bottom: 50px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .search-item .tags .tag-item {
   float: left;
   padding: 10px 24px;
   border: 2px solid #6e77a7;
   color: #6e77a7;
-  font-weight:bold;
+  font-weight: bold;
   margin-right: 8px;
   border-radius: 20px;
   font-size: 1rem;

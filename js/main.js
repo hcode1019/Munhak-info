@@ -4,7 +4,39 @@ $(function () {
   });
 
   $(window).on("load", function () {
-    $(".main-slider").slider({ height: "52.625vw" });
+    $(".main-slider").slider({ height: "49vw" });
+  });
+
+  //움직이는 퀵메뉴
+  var defalutTop = parseInt($("aside").css("top")); //기본위치
+
+  $(window).scroll(function () {
+    var st = $(this).scrollTop(); //스크롤 이벤트 발생시 이동한 거리 계산
+    $("aside")
+      .stop()
+      .animate({ top: defalutTop + st }, 800); //기본위치에 스크롤 발생한 거리만큼 1초동안 이동
+  });
+  // 퀵 사이드 메뉴
+  $("aside .inner").hide();
+
+  $("aside label").click(function () {
+    var checked = $("aside input").is(":checked");
+    if (checked) {
+      $("aside .inner").stop().hide(600);
+    } else {
+      $("aside .inner").stop().show(600);
+    }
+  });
+
+  // 퀵탑 버튼
+  $(".quick_btn .inner").hide();
+  $(window).scroll(function () {
+    var scrollVal = $(window).scrollTop();
+    if (scrollVal > 1000) {
+      $(".quick_btn .inner").fadeIn();
+    } else {
+      $(".quick_btn .inner").fadeOut();
+    }
   });
 
   //구글맵
@@ -29,25 +61,14 @@ $(function () {
   });
 
   //카테고리 배너
-  $(".cate_banner").hover(function(){
+  $(".cate_banner").hover(function () {
     $(this).find(".item").addClass("active");
-  })
-
+  });
 
   //인기도서 슬라이드
 
   //function rl_slides(containerID, buttonID, autoStart)
-  fn_article3("rl-notice","rl-btn",true);
-
-  //움직이는 퀵메뉴
-  var defalutTop = parseInt($(".quick_btn").css("top")); //기본위치
-
-  $(window).scroll(function () {
-    var st = $(this).scrollTop(); //스크롤 이벤트 발생시 이동한 거리 계산
-    $(".quick_btn")
-      .stop()
-      .animate({ top: defalutTop + st }, 800); //기본위치에 스크롤 발생한 거리만큼 1초동안 이동
-  });
+  fn_article3("rl-notice", "rl-btn", true);
 
   //도서 슬라이드 배너
   var i = 1; //초기값 i 설정
@@ -88,7 +109,7 @@ $(function () {
     $(".most-book_banner .wrap:nth-child(" + i + ")").addClass("active");
   }
 
-    //도서 슬라이드 메뉴
+  //도서 슬라이드 메뉴
   var slideItems = "#slideInner .list-contain";
 
   //$(tab_menu + ":first-child").css({ fontWeight: "bold" });
@@ -119,5 +140,9 @@ $(function () {
   $(".list-contain .bx-next").click(function () {
     mySlider.goToNextSlide();
     return false;
+  });
+
+  $(".book-cast_banner").hover(function () {
+    $(this).addClass("visit");
   });
 });
