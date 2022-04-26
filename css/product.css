@@ -42,17 +42,18 @@ th {
 }
 .product_banner .goods_inner {
   float: left;
-  width: 50%;
+  width: 45%;
+  margin-right:5%;
   text-align: left;
   padding: 2rem 0;
 }
 .product_banner .goods_inner img {
-  width: 80%;
+  width: 100%;
   box-shadow: 5px 5px 5px #999;
 }
 .product_banner .sale_contain {
   float: left;
-  width: 50%;
+  width: 45%;
   padding: 2rem 0;
 }
 .product_banner .sale_contain .book-info {
@@ -248,6 +249,11 @@ th {
   color: #333;
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid #333;
+  transition: .3s;
+}
+.product-intro .menu-contain .btns .btn:hover{
+  background-color:#1d2d7b;
+  color:#fff;
 }
 .product-intro .menu-contain .btns .btn:last-child {
   border: none;

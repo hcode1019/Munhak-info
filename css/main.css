@@ -1,7 +1,11 @@
 /* font-family: 'Nanum Gothic', sans-serif;
 font-family: 'Nanum Myeongjo', serif;
 font-family: 'Black Han Sans', sans-serif; */
-
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Gothic", sans-serif;
+}
 .btn {
   border-radius: 16px;
   padding: 8px 24px;
@@ -211,14 +215,13 @@ nav {
   opacity: 1;
 }
 .brands-banner .para-inner .banner-title {
-  font-family: "Nanum Myeongjo", serif;
-  font-size: 6.25rem;
+  font-size: 5rem;
   color: #000;
   margin-bottom: 8%;
 }
 .brands-banner .para-inner .desc {
-  font-size: 1.2rem;
-  line-height: 2;
+  font-size: 1rem;
+  line-height: 1.4;
   margin-bottom: 10%;
   color: #666;
 }
@@ -226,7 +229,7 @@ nav {
   display: block;
   width: 150px;
   height: 19px;
-  background: url(../img/arrow.png) no-repeat;
+  background: url(../img/arrow-3.png) no-repeat;
   background-position: right 50px top;
   background-size: cover;
   animation: growBtn 4s linear infinite;
@@ -503,7 +506,19 @@ nav {
   z-index: 5;
   border: 1px solid #999;
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+.recom-book_banner #slideInner .list-contain .bx-prev {
+  background-image: url(../img/icon/prev.png);
+  background-position: right 2px center;
+}
+
+.recom-book_banner #slideInner .list-contain .bx-next {
+  background-image: url(../img/icon/next.png);
+  background-position: left 2px center;
+}
+
 .recom-book_banner #slideInner .list-contain .bx-prev {
   /*left: 7%;*/
   left: 0;
@@ -514,11 +529,17 @@ nav {
   right: 0;
   transform: translateX(100%);
 }
-.recom-book_banner #slideInner .list-contain .bx-prev img,
+/*.recom-book_banner #slideInner .list-contain .bx-prev img,
 .recom-book_banner #slideInner .list-contain .bx-next img {
-  width: 100%;
+  display:block;
+  width: 90%;;
+  margin:0 auto;
   border: none;
   margin-bottom: 10px;
+}*/
+.recom-book_banner #slideInner .list-contain .bx-prev img {
+}
+.recom-book_banner #slideInner .list-contain .bx-next img {
 }
 .recom-book_banner #slideInner .list-contain .bx-prev img {
   transform: rotate(180deg);
@@ -529,12 +550,11 @@ nav {
 
 .grand_banner {
   background-color: #fafafa;
-  font-family: "Nanum Gothic", sans-serif;
   margin-bottom: 7.5rem;
 }
 .grand_banner .inner {
-  width: 90%;
-  padding: 29rem 0 11.25rem;
+  width: 80%;
+  padding: 15rem 0;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -569,19 +589,22 @@ nav {
 }
 .grand_banner .inner .text-box .btn {
   width: 300px;
+  line-height: 2.4rem;
   border-radius: 0;
   margin: 0;
   font-size: 1rem;
   float: right;
-}
-.grand_banner .inner .text-box .btn:hover {
   background-color: #333;
   color: #fff;
+}
+.grand_banner .inner .text-box .btn:hover {
+  background-color: transparent;
+  color: #333;
 }
 
 /* 전집배너 end */
 
-/*도서 슬라이드 start*/
+/*오늘의 책 start*/
 
 /* .book-slide_banner {
   width: 100%;
@@ -693,16 +716,16 @@ nav {
 }
 
 .most-book_banner .inner .text-contain .text-inner .main-title {
-  font-family: "Black Han Sans", sans-serif;
   font-weight: 400;
   font-size: 2.4rem;
   line-height: 3rem;
   color: #333;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 .most-book_banner .inner .text-contain .text-inner .desc {
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.4;
   height: 4rem;
   color: #666;
   margin-bottom: 5rem;
@@ -712,9 +735,9 @@ nav {
   color: #fff;
   display: block;
   font-size: 1rem;
-  line-height: 2.4rem;
+  line-height: 2.6rem;
   border: 1px solid #333;
-  width: 150px;
+  width: 250px;
   text-align: center;
   font-weight: bold;
   transition: 0.3s;
@@ -726,7 +749,7 @@ nav {
 .most-book_banner .inner .controls {
   position: absolute;
   left: 0;
-  bottom: 10%;
+  bottom: 15%;
   font-weight: bold;
   display: flex;
   vertical-align: middle;
@@ -762,7 +785,7 @@ nav {
   background-color: #272727;
 }
 .most-book_banner .inner .goods {
-  width: 30%;
+  width: 25%;
   position: absolute;
   top: 0;
   right: 0;
@@ -785,14 +808,13 @@ nav {
 .most-book_banner .inner .goods img.prev {
   transform: rotate(-20deg);
 }
-/*도서 슬라이드 end
+/*오늘의 책 end */
 
 /* 북캐스트 배너 start */
 
 .book-cast_banner {
   width: 100%;
   margin: 0 auto 15rem;
-  font-family: "Nanum Myeongjo", serif;
 }
 .book-cast_banner .photo-contain > img.item {
   width: 100%;
@@ -803,7 +825,7 @@ nav {
 .book-cast_banner > h2 {
   font-size: 2.375rem;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   position: relative;
 }
 .book-cast_banner > h2::after {
@@ -856,7 +878,7 @@ nav {
 }
 .book-cast_banner.visit .text-inner .sub-title {
   opacity: 1;
-  transition: opacity 1s 4s ease-out;
+  transition: opacity 1s 2s ease-out;
 }
 .book-cast_banner .text-inner .main-title {
   /* font-size: 2rem; */
@@ -869,11 +891,11 @@ nav {
 }
 .book-cast_banner.visit .text-inner .main-title {
   opacity: 1;
-  transition: opacity 1s 4.4s ease-out;
+  transition: opacity 1s 2.4s ease-out;
 }
 .book-cast_banner .text-inner .disc {
   /* font-size: 1.125rem; */
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #333;
   margin-bottom: 2.2rem;
   line-height: 1.4;
@@ -882,11 +904,12 @@ nav {
 }
 .book-cast_banner.visit .text-inner .disc {
   opacity: 1;
-  transition: opacity 1s 4.8s ease-out;
+  transition: opacity 1s 2.8s ease-out;
 }
 .book-cast_banner .text-inner .btn {
   width: 300px;
   font-size: 1rem;
+  line-height: 2;
   border-radius: 0;
   color: #fff;
   background-color: #333;
@@ -895,7 +918,7 @@ nav {
 }
 .book-cast_banner.visit .text-inner .btn {
   opacity: 1;
-  transition: opacity 1s 5.2s ease-out;
+  transition: opacity 1s 3.2s ease-out;
 }
 .book-cast_banner .text-inner .btn:hover {
   color: #333;
@@ -922,9 +945,9 @@ nav {
   transform: translate(-50%);
   opacity: 0;
 }
-.book-cast_banner.visit .containner > img {
+.book-cast_banner.visit .containner > img.item {
   animation-name: flutterItem;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -948,41 +971,29 @@ nav {
     transform: scale(1);
   }
 }
-.book-cast_banner:hover .containner .item-01 {
-  animation-delay: 0.3s;
+.book-cast_banner .containner .item-01 {
+  animation-delay: 0s;
 }
-.book-cast_banner:hover .containner .item-02 {
+.book-cast_banner .containner .item-02 {
   animation-delay: 0.5s;
 }
-.book-cast_banner:hover .containner .item-03 {
+.book-cast_banner .containner .item-03 {
+  animation-delay: 0.8s;
+}
+.book-cast_banner .containner .item-04 {
   animation-delay: 1.2s;
 }
-.book-cast_banner:hover .containner .item-04 {
-  animation-delay: 2.1s;
+.book-cast_banner .containner .item-05 {
+  animation-delay: 0.2s;
 }
-.book-cast_banner:hover .containner .item-05 {
-  animation-delay: 3s;
+.book-cast_banner .containner .item-06 {
+  animation-delay: 0.6s;
 }
-.book-cast_banner:hover .containner .item-06 {
-  animation-delay: 1.5s;
-}
-.book-cast_banner:hover .containner .item-07 {
+.book-cast_banner .containner .item-07 {
   animation-delay: 1s;
 }
 .book-cast_banner:hover .containner .item-08 {
-  animation-delay: 1.8s;
-}
-.book-cast_banner:hover .containner .item-09 {
-  animation-delay: 2.3s;
-}
-.book-cast_banner:hover .containner .item-10 {
-  animation-delay: 2.5s;
-}
-.book-cast_banner:hover .containner .item-11 {
-  animation-delay: 0.7s;
-}
-.book-cast_banner:hover .containner .item-12 {
-  animation-delay: 2.8s;
+  animation-delay: 1.4s;
 }
 
 /*.book-cast_banner:hover .containner > img {
@@ -1178,7 +1189,6 @@ nav {
   font-weight: 400;
 }
 .contest_banner article .sub-title {
-  font-family: "Nanum Myeongjo", serif;
   font-size: 1rem;
   margin: 0 0 5rem;
   position: relative;
@@ -1209,22 +1219,23 @@ nav {
 .contest_banner article .disc {
   /*margin: 0 0 5.625rem;*/
   margin: 0 0 3rem;
-  line-height: 1.8;
+  line-height: 1.4;
   font-size: 1rem;
 }
 .contest_banner article .btn {
   font-size: 1rem;
-  width: 160px;
-  line-height: 1.6;
+  width: 300px;
+  line-height: 2;
   border: 0;
-  border-radius: 5px;
   color: #fff;
   background-color: #333;
+  border-radius: 0;
   border: 1px solid #333;
 }
 .contest_banner article .btn:hover {
-  background-color: #555;
-  border-color: #555;
+  background-color: transparent;
+  border-color: #333;
+  color: #333;
   /*color:#333;*/
 }
 
@@ -1233,7 +1244,6 @@ nav {
 /*북 트레일러 배너 start*/
 .book-trailer {
   width: 100%;
-  font-family: "Nanum Myeongjo", serif;
   margin-bottom: 12rem;
   overflow: hidden;
 }
@@ -1241,12 +1251,13 @@ nav {
   display: none;
 }
 .book-trailer .sub-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 .book-trailer .title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -1254,7 +1265,7 @@ nav {
   width: 60%;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 40%;
+  padding-bottom: 35%;
 }
 .book-trailer .main-video_inner video {
   position: absolute;
@@ -1312,7 +1323,6 @@ section.event_banner {
   margin: 0 auto 8rem;
 }
 section.event_banner .header {
-  font-family: "Nanum Gothic", sans-serif;
   color: #333;
   padding: 75px 0 0;
 }
@@ -1329,8 +1339,8 @@ section.event_banner .header h2 {
 }
 section.event_banner .header p {
   text-align: justify;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1rem;
+  line-height: 1.4;
   font-weight: 500;
 }
 section.event_banner article {
@@ -1353,12 +1363,12 @@ section.event_banner article:last-child {
 /*공지사항배너 start*/
 
 .notice-banner {
-  width: 100%;
+  width: 90%;
   margin: 0 auto 200px;
   overflow: hidden;
 }
 .notice-banner .photo-contain {
-  width: 50%;
+  width: 49%;
   float: left;
   height: 427px;
   background: url(../img/recycle-bg-07.jpg) no-repeat;
@@ -1366,11 +1376,11 @@ section.event_banner article:last-child {
   background-size: cover;
   position: relative;
   overflow: hidden;
+  margin-right: 2%;
 }
 .notice-banner .banner-contain {
-  width: 35%;
-  margin-right: 10%;
-  float: right;
+  width: 49%;
+  float: left;
 }
 .notice-banner .photo-contain .bg-filter {
   position: absolute;
@@ -1584,7 +1594,6 @@ section.event_banner article:last-child {
   height: 55vw;
   position: relative;
   color: #333;
-  font-family: "Nanum Myeongjo", serif;
   margin-bottom: 8rem;
 }
 .cafe-comma_banner > img {
@@ -1607,7 +1616,7 @@ section.event_banner article:last-child {
   cursor: default;
 }
 .cafe-comma_banner:hover .center-text_inner {
-  transition: opacity 0.5s 0s linear;
+  transition: opacity 1s 0s linear;
   opacity: 1;
 }
 .cafe-comma_banner .center-text_inner .sub-title {
@@ -1624,8 +1633,9 @@ section.event_banner article:last-child {
   display: flex;
 }
 .cafe-comma_banner .center-text_inner .main-title .left-item {
-  font-size: 10rem;
-  line-height: 8rem;
+  font-size: 9rem;
+  padding-bottom: 5px;
+  margin-top: -10px;
 }
 .cafe-comma_banner .center-text_inner .main-title .right-item {
   display: flex;
@@ -1637,6 +1647,7 @@ section.event_banner article:last-child {
   position: absolute;
   bottom: 15%;
   left: 0;
+  color: #666;
   line-height: 1.6;
   font-weight: 700;
   opacity: 0;
@@ -1654,13 +1665,17 @@ section.event_banner article:last-child {
   display: inline-block;
   font-size: 1rem;
   border: none;
-  padding: 6px 60px;
+  width: 250px;
   position: relative;
-  border: 1px solid black;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
   border-radius: 0;
 }
 .cafe-comma_banner .disc .btn:hover {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
+  color: #333;
+  background-color: transparent;
 }
 
 /* .cafe-comma_banner .disc .btn:after,
@@ -1707,7 +1722,6 @@ section.event_banner article:last-child {
 .sns_banner .info-contain {
   width: 80%;
   margin: 0 auto;
-  font-family: "Nanum Myeongjo", serif;
 }
 .sns_banner .info-contain .title {
   font-size: 28px;
@@ -1867,10 +1881,10 @@ section.event_banner article:last-child {
 
 aside {
   position: absolute;
-  right: 10px;
+  right: 15px;
   top: 80%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background-color: #0a1e5c;
   z-index: 9;
 }
@@ -1880,28 +1894,28 @@ aside input {
 aside label {
   display: block;
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 aside label span {
   display: block;
   position: absolute;
   left: 10px;
-  width: 40px;
-  height: 5px;
+  width: 30px;
+  height: 2px;
   background-color: #fff;
   border-radius: 40px;
   transition: 0.3s;
 }
 aside label span:nth-child(1) {
-  top: 15px;
+  top: 12px;
 }
 aside label span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
 aside label span:nth-child(3) {
-  bottom: 15px;
+  bottom: 12px;
 }
 aside input:checked ~ label span:nth-child(1) {
   top: 50%;
@@ -1925,12 +1939,16 @@ aside .menu-contain li {
   background-color: #fff;
   width: 60px;
   overflow: hidden;
-  border: 1px solid rgb(214, 214, 214);
+  border: 1px solid rgb(194, 194, 194);
   border-radius: 50%;
   position: relative;
   opacity: 0;
   transition-property: all;
   transition-duration: 0.5s;
+  margin-left: -5px;
+}
+aside .menu-contain li:last-child {
+  margin-bottom: 0;
 }
 aside .menu-contain li:nth-child(1) {
   top: 60px;
